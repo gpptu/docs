@@ -53,7 +53,7 @@
 		font-size: 1em;
 		line-height: 1.4em;
 		font-weight: normal;
-		padding: 20px 30px;
+		/*padding: 20px 30px;*/
 	}
 
 	h1, h2, h3, h4, h5 {
@@ -67,6 +67,12 @@
 	h1 {
 		color: #9322df;
 	}
+		
+	h2 {
+		margin: 2em 0;
+		font-size: 1.6em;
+		text-align: center;
+	}
 
 	h6 {
 		color: #045772;
@@ -75,6 +81,7 @@
 	/* links */
 	a, a:visited, a:active, a:hover {
 		color: #9322df;
+		hyphens: none !important;
 	}
 
 	a:hover {
@@ -111,15 +118,42 @@
 		border: 0.5px solid #045772;
 	}
 
-	.content {
-		padding: 0 10%;
+    .content {
+        padding: 0 clamp(1rem, 5vw, 5rem);
+        max-width: 1200px;
+        margin: 0 auto;
+		position: relative;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+    }
+    @media (max-width: 768px) {
+        .content {
+            padding: 0 clamp(1rem, 4vw, 3rem);
+        }
+    }
+    @media (max-width: 480px) {
+        .content {
+            padding: 0 clamp(1rem, 3vw, 2rem);
+        }
+    }
+		
+	.content small {
+		margin-top: 50px;
+		display: block;
+		text-align: right; /* Use this to align to the right */
+	}
+	.content::after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 	</style>
 	<title>Política de Privacidade</title>
 </head>
 <body>
+	<h2>Política de Privacidade do Aplicativo Detran Inteligente</h2>
 	<div class="content">
-		<h2 style="text-align: center;">Política de Privacidade do Aplicativo Detran Inteligente</h2>
 		<ol>
 			<li>
 				<h4>INTRODUÇÃO</h4>
@@ -262,6 +296,8 @@
 				<p>Esta Política de Privacidade de Dados Pessoais deverá ser revisada em razão de alterações legais, mudanças em processos internos ou necessidade de adequação, especialmente considerando as premissas fundamentais que a orientam e que estão descritas na Introdução deste instrumento.</p>
 			</li>
 		</ol>
+		<small>Última atualização em: 29/05/2025</small>
+		<br/>
 	</div>
 </body>
 </html>
