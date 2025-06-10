@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style>
+	* {
+		-webkit-transition: 200ms;
+		-moz-transition: 200ms;
+		-ms-transition: 200ms;
+		-o-transition: 200ms;
+		transition: 200ms;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	a, a:visited, a:hover, a:active {
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		position: relative;
+		transition: 0.5s color ease;
+		text-decoration: none;
+	}
+
+	a.before:before, a.after:after {
+		content: "";
+		transition: 0.5s all ease;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		position: absolute;
+	}
+
+	a.before:before {
+		top: -0.25em;
+	}
+
+	a.after:after {
+		bottom: -0.25em;
+	}
+
+	a.before:before, a.after:after {
+		height: 3px;
+		height: 0.1rem;
+		width: 0;
+		background: #f7f7f7;
+	}
+
+	a.before:hover:before, a.after:hover:after {
+		width: 100%;
+	}
+
+	body {
+		color: #024257;
+		font-family: Gibson, Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		line-height: 1.4em;
+		font-weight: normal;
+		/*padding: 20px 30px;*/
+	}
+
+	h1, h2, h3, h4, h5 {
+		font-family: Gibson, Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		line-height: 1.5em;
+		margin: .45em 0;
+		padding: 0;
+	}
+
+	h1 {
+		color: #9322df;
+	}
+		
+	h2 {
+		margin: 2em 0;
+		font-size: 1.6em;
+		text-align: center;
+	}
+
+	h6 {
+		color: #045772;
+	}
+
+	/* links */
+	a, a:visited, a:active, a:hover {
+		color: #9322df;
+		hyphens: none !important;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	* {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	/*colors and backgrounds*/
+	body {
+		background: #ffffff;
+	}
+
+	h1, h2, h3, h4, h5 {
+		color: #045772;
+	}
+
+	table {
+		display: table;
+		border-collapse: separate;
+		box-sizing: border-box;
+		text-indent: initial;
+		unicode-bidi: isolate;
+		border-spacing: 0px;
+		border: 1px solid #045772;
+	}
+
+	.table td, .table th {
+		padding: .75rem;
+		vertical-align: top;
+		border: 0.5px solid #045772;
+	}
+
+    .content {
+        padding: 0 clamp(1rem, 5vw, 5rem);
+        max-width: 1200px;
+        margin: 0 auto;
+		position: relative;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+    }
+    @media (max-width: 768px) {
+        .content {
+            padding: 0 clamp(1rem, 4vw, 3rem);
+        }
+    }
+    @media (max-width: 480px) {
+        .content {
+            padding: 0 clamp(1rem, 3vw, 2rem);
+        }
+    }
+		
+	.content small {
+		margin-top: 50px;
+		display: block;
+		text-align: right; /* Use this to align to the right */
+	}
+	.content::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	</style>
+	<title>Política de Privacidade / Termos e Condições de Uso</title>
+</head>
+<body>
+	<div class="content">
+		<h2>Política de Privacidade</h2>
+		<ol>
+            <li>
+                <h4>Apresentação</h4>
+				<p><strong>1.1. Objetivo da Política</strong></p>
+                <p>Esta Política de Privacidade tem como finalidade estabelecer as diretrizes para o tratamento de dados pessoais no âmbito do sistema "Confia Paraná", garantindo a transparência, segurança e conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD).</p>
+				<p><strong>1.2. Definições</strong></p>
+                <p>Para fins desta política, adotam-se as seguintes definições e significados dos respectivos acrônimos:</p>
+				<ul>
+					<li>SEFA: Secretaria da Fazenda do Estado do Paraná;</li>
+					<li>REPR: Receita Estadual do Paraná;</li>
+					<li>Confia Paraná: Programa de Conformidade Fiscal Cooperativa do Estado do Paraná;</li>
+					<li>CELEPAR: Companhia de Tecnologia da Informação e Comunicação do Paraná;</li>
+					<li>
+						<p>Sistema Confia Paraná: Plataforma digital acessível por meio do endereço eletrônico https://confia.receita.pr.gov.br, destinada à operacionalização do Programa Confia Paraná, permitindo aos usuários:</p>
+						<ul>
+							<li>Consultar a classificação de conformidade fiscal das empresas das quais são representantes legais (sócios), contadores ou auditores fiscais;</li>
+							<li>Identificar eventuais não conformidades fiscais e obter orientações para sua correção;</li>
+							<li>Comunicar-se com auditores fiscais por meio de módulo de chat, com registros acessíveis a todos os auditores participantes do programa;</li>
+							<li>Gerenciar preferências relacionadas à divulgação pública das notas de conformidade fiscal das empresas representadas.</li>
+						</ul>
+					</li>
+					<li>Usuário: Pessoa física que acessa e utiliza o sistema Confia Paraná, na qualidade de sócio, contador ou auditor fiscal, conforme suas credenciais de acesso.</li>
+					<li>Dados pessoais: Informações relacionadas a pessoa natural identificada ou identificável, conforme definido na LGPD;</li>
+					<li>Dados pessoais sensíveis: Dados pessoais sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural, conforme definido na LGPD.</li>
+					<li>Tratamento de dados: Toda operação realizada com dados pessoais, como as que se referem a coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração, conforme definido na LGPD</li>
+				</ul>
+				<p><strong>1.3. Identificação do Controlador</strong></p>
+                <p>O controlador dos dados pessoais tratados no Sistema Confia Paraná é a SEFA, por meio da REPR.</p>
+				<p><strong>1.4. Identificação do Operador</strong></p>
+                <p>A CELEPAR é a operadora responsável pelo tratamento de dados pessoais em nome da SEFA, no âmbito do sistema “Confia Paraná”, conforme contrato vigente.</p>
+                <p>Informações adicionais sobre o tratamento de dados pessoais realizado pela CELEPAR podem ser obtidas em:<br/><a href="https://www.celepar.pr.gov.br/dadospessoais">www.celepar.pr.gov.br/dadospessoais</a> | <a href="mailto:dpo@celepar.pr.gov.br">dpo@celepar.pr.gov.br</a></p>
+				<p><strong>1.5. Abrangência da Política</strong></p>
+                <p>Esta política aplica-se a todos os usuários do Sistema Confia Paraná, incluindo sócios, contadores e auditores fiscais, bem como a quaisquer dados pessoais tratados no contexto das funcionalidades oferecidas pelo sistema.</p>
+				<p><strong>1.6. Compromisso com a Privacidade</strong></p>
+                <p>A SEFA e a REPR comprometem-se a adotar medidas técnicas e administrativas para proteger os dados pessoais dos usuários, assegurando sua confidencialidade, integridade e disponibilidade, conforme previsto na LGPD e demais normativas aplicáveis.</p>
+                <br/>
+            </li>
+			<li>
+				<h4>Base Legal para o Tratamento de Dados</h4>
+				<p><strong>2.1. Identificação do Controlador</strong></p>
+                <p>O tratamento de dados pessoais no sistema Confia Paraná visa atender à finalidade pública e ao interesse público, conforme estabelecido no artigo 23 da LGPD. As atividades de tratamento estão diretamente relacionadas às competências legais da SEFA e da REPR, incluindo:</p>
+				<ul>
+					<li><strong>Cumprimento de obrigação legal ou regulatória:</strong> conforme o artigo 7º, inciso II, e o artigo 11, inciso II, alínea 'a', da LGPD, o tratamento é necessário para o cumprimento de obrigações legais e regulatórias atribuídas à SEFA e à REPR.</li>
+					<li><strong>Execução de políticas públicas:</strong> conforme o artigo 7º, inciso III, e o artigo 11, inciso II, alínea 'b', da LGPD, o tratamento é necessário para a execução de políticas públicas previstas em leis e regulamentos ou respaldadas em contratos, convênios ou instrumentos congêneres.</li>
+				</ul>				
+                <p>Essas bases legais autorizam o tratamento de dados pessoais sem a necessidade de consentimento do titular, desde que observados os princípios e as garantias estabelecidos na LGPD.</p>
+				<p><strong>2.2. Finalidade Pública e Interesse Público</strong></p>
+                <p>O tratamento de dados pessoais no sistema Confia Paraná visa atender à finalidade pública e ao interesse público, conforme estabelecido no artigo 23 da LGPD. As atividades de tratamento estão diretamente relacionadas às competências legais da SEFA e da REPR, incluindo:</p>
+				<ul>
+					<li>Classificação de empresas conforme critérios legais estabelecidos;</li>
+					<li>Identificação e correção de não conformidades tributárias;</li>
+					<li>Facilitação da comunicação entre auditores fiscais, sócios e contadores;</li>
+					<li>Registro e histórico de interações para fins de auditoria e controle.</li>
+				</ul>
+				<p><strong>2.3. Transparência e Publicidade</strong></p>
+                <p>Em conformidade com o artigo 23, inciso I, da LGPD, a SEFA e a REPR comprometem-se a fornecer informações claras e atualizadas sobre as hipóteses legais, finalidades, procedimentos e práticas utilizadas no tratamento de dados pessoais no sistema Confia Paraná. Essas informações estarão disponíveis em veículos de fácil acesso, preferencialmente em seus sítios eletrônicos oficiais.</p>
+				<p><strong>2.4. Dados Pessoais Sensíveis</strong></p>
+                <p>O tratamento de dados pessoais sensíveis, quando necessário, será realizado com base nas hipóteses legais previstas no artigo 11, inciso II, da LGPD, especialmente nas alíneas 'a' e 'b', que autorizam o tratamento sem o consentimento do titular quando indispensável para o cumprimento de obrigação legal ou regulatória pelo controlador ou para a execução, pela administração pública, de políticas públicas previstas em leis ou regulamentos.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Finalidades do Tratamento de Dados</h4>
+				<p>O sistema Confia Paraná realiza o tratamento de dados pessoais com as finalidades descritas nos subitens a seguir, em conformidade com a LGPD e considerando o interesse público e as atribuições legais da SEFA e da REPR.</p>
+				<p><strong>3.1. Classificação de Empresas</strong></p>
+                <p>Os dados são utilizados para classificar as empresas participantes do programa Confia Paraná, com base em critérios legais e regulamentares estabelecidos pela legislação tributária estadual. Essa classificação visa promover a conformidade fiscal e incentivar boas práticas empresariais.</p>
+				<p><strong>3.2. Identificação e Correção de Não Conformidades</strong></p>
+                <p>O tratamento de dados permite identificar eventuais não conformidades fiscais das empresas, fornecendo informações detalhadas sobre as irregularidades detectadas e orientações para sua correção, visando à regularização e ao cumprimento das obrigações tributárias.</p>
+				<p><strong>3.3. Comunicação entre Auditores Fiscais, Sócios e Contadores</strong></p>
+                <p>O sistema dispõe de um módulo de chat que possibilita a comunicação direta entre auditores fiscais e representantes das empresas (sócios e contadores). As conversas são registradas e armazenadas para garantir a transparência, a integridade das informações e a possibilidade de auditorias futuras.</p>
+				<p><strong>3.4. Registro e Histórico de Interações</strong></p>
+                <p>As interações realizadas no sistema, incluindo acessos, consultas e comunicações, são registradas para fins de controle, auditoria e melhoria contínua dos serviços prestados, assegurando a rastreabilidade e a responsabilidade das ações realizadas pelos usuários.</p>
+				<p><strong>3.5. Exercício de Direitos dos Titulares</strong></p>
+                <p>O tratamento de dados também visa atender às solicitações dos titulares de dados pessoais, conforme previsto na LGPD, respeitando as limitações legais aplicáveis, especialmente no contexto da administração pública e das obrigações legais da SEFA e da REPR.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Tipos de Dados Coletados</h4>
+                <p>O sistema Confia Paraná coleta e trata dados pessoais necessários para o cumprimento de suas finalidades legais e institucionais. A coleta ocorre por meio de formulários, integrações com bases de dados oficiais e registros de atividades dos usuários no sistema.</p>
+				<p><strong>4.1. Dados Pessoais de Usuários</strong></p>
+                <p>São coletados dados identificadores dos usuários que acessam o sistema, tais como:</p>
+				<ul>
+					<li>Nome completo;</li>
+					<li>Número do Cadastro de Pessoas Físicas (CPF);</li>
+					<li>Endereço de e-mail institucional ou profissional;</li>
+					<li>Número de inscrição no Conselho Regional de Contabilidade (CRC), quando aplicável;</li>
+					<li>Credenciais de acesso (login e senha).</li>
+				</ul>
+				<p><strong>4.2. Dados Cadastrais e Fiscais das Empresas</strong></p>
+                <p>O sistema acessa e trata dados relacionados às empresas participantes do programa, incluindo:</p>
+				<ul>
+					<li>Razão social e nome fantasia;</li>
+					<li>Número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ);</li>
+					<li>Endereço completo;</li>
+					<li>Informações fiscais e tributárias, como declarações, pagamentos e eventuais pendências;</li>
+					<li>Inclusão da pessoa jurídica em autorregularizações ou a presença em malhas fiscais;</li>
+					<li>Histórico de conformidade fiscal.</li>
+				</ul>
+				<p><strong>4.3. Dados de Navegação e Registros de Acesso</strong></p>
+                <p>Para fins de segurança, auditoria e melhoria contínua dos serviços, o sistema coleta automaticamente:</p>
+				<ul>
+					<li>Endereço de Protocolo de Internet (IP) utilizado para acesso;</li>
+					<li>Data e hora de cada acesso;</li>
+					<li>Páginas e funcionalidades acessadas;</li>
+					<li>Tipo de navegador e dispositivo utilizado.</li>
+				</ul>
+				<p><strong>4.4. Conteúdo das Comunicações via Chat</strong></p>
+                <p>As interações realizadas por meio do módulo de chat entre auditores fiscais, sócios e contadores são registradas e armazenadas, incluindo:</p>
+				<ul>
+					<li>Mensagens trocadas entre as partes;</li>
+					<li>Data e hora de cada mensagem;</li>
+					<li>Identificação dos participantes da conversa;</li>
+					<li>Arquivos enviados e recebidos.</li>
+				</ul>
+                <p>Esses registros visam assegurar a transparência, a integridade das informações e a possibilidade de auditorias futuras.</p>
+				<p><strong>4.5. Dados de Terceiros</strong></p>
+                <p>Em determinadas situações, o sistema pode coletar ou acessar dados de terceiros relacionados às empresas, como:</p>
+				<ul>
+					<li>Informações de sócios e administradores;</li>
+					<li>Dados de contadores responsáveis;</li>
+					<li>Quaisquer dados de outros sistemas operados pela SEFA e pela REPR, desde que necessários;</li>
+					<li>Outros dados públicos disponíveis em bases oficiais.</li>
+				</ul>
+                <p>O tratamento desses dados ocorre exclusivamente para fins de cumprimento das obrigações legais e institucionais do programa Confia Paraná.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Compartilhamento de Dados</h4>
+                <p>O compartilhamento de dados pessoais tratados no sistema Confia Paraná será realizado exclusivamente para atender às finalidades públicas previstas em lei, observando-se os princípios da LGPD e as normas aplicáveis à administração pública. O acesso às informações será restrito aos auditores fiscais participantes do programa e a outros órgãos públicos, quando necessário, para o cumprimento de obrigações legais. Não haverá compartilhamento com entidades privadas, salvo com base legal expressa.</p>
+				<p><strong>5.1. Compartilhamento interno</strong></p>
+                <p>Os dados pessoais coletados podem ser acessados por auditores fiscais da Receita Estadual do Paraná (REPR), conforme suas atribuições legais. Esse acesso visa permitir a análise, o acompanhamento e a comunicação com os representantes das empresas participantes do programa.</p>
+				<p><strong>5.2. Compartilhamento externo</strong></p>
+                <p>As informações relativas à classificação dos contribuintes no âmbito do sistema Confia Paraná poderão ser disponibilizadas publicamente por meio de portal específico. A divulgação ocorrerá nas seguintes hipóteses:</p>
+				<ul>
+					<li>Quando o contribuinte obtiver a classificação “A”;</li>
+					<li>Quando o contribuinte, ainda que não classificado com a nota “A”, manifestar expressamente o seu consentimento, por meio do sócio administrador, para a divulgação da nota.</li>
+				</ul>
+                <p>Adicionalmente, os contribuintes classificados com a nota “A” terão a prerrogativa de optar pela não divulgação pública de sua classificação, conforme previsão legal.</p>
+				<p><strong>5.3. Compartilhamento com Outros Órgãos Públicos</strong></p>
+                <p>O sistema poderá compartilhar dados pessoais com outros órgãos e entidades da administração pública, direta ou indireta, quando necessário para:</p>
+				<ul>
+					<li>Cumprimento de obrigações legais ou regulatórias;</li>
+					<li>Execução de políticas públicas previstas em leis e regulamentos;</li>
+					<li>Atendimento a requisições de autoridades competentes, conforme previsto na legislação vigente.</li>
+				</ul>
+                <p>Nesses casos, o compartilhamento será realizado de forma segura e restrita às finalidades específicas que o justificam.</p>
+				<p><strong>5.4. Compartilhamento com Operadores de Dados</strong></p>
+                <p>A SEFA poderá contratar terceiros para atuar como operadores no tratamento de dados pessoais, conforme definido na LGPD. Esses operadores atuarão sob orientação da SEFA e deverão observar as diretrizes estabelecidas nesta política, bem como as normas legais aplicáveis, garantindo a segurança e a confidencialidade das informações tratadas.</p>
+				<p><strong>5.5. Compartilhamento de Dados Anonimizados</strong></p>
+                <p>Dados pessoais anonimizados, que não permitem a identificação do titular, poderão ser compartilhados para fins de pesquisa, elaboração de estatísticas e desenvolvimento de políticas públicas, conforme previsto na legislação vigente.</p>
+				<p>As mensagens enviadas e recebidas via chat, no entanto, não serão compartilhadas, ainda que de forma anônima. A persistência dessas informações nos bancos de dados servirá para garantir os propósitos descritos no item 7 desta Política. </p>
+				<p><strong>5.6. Transparência no Compartilhamento</strong></p>
+                <p>A SEFA compromete-se a manter registros das operações de compartilhamento de dados pessoais realizadas, assegurando a transparência e a rastreabilidade dessas atividades. Informações sobre o compartilhamento de dados poderão ser fornecidas aos titulares, mediante solicitação, observadas as limitações legais aplicáveis.</p>
+				<br/>
+			</li>
+            <li>
+                <h4>Direitos dos Titulares de Dados</h4>
+                <p>Em conformidade com a LGPD, os titulares de dados pessoais tratados no âmbito do sistema Confia Paraná possuem os seguintes direitos:</p>
+				<p><strong>6.1. Confirmação e Acesso aos Dados</strong></p>
+				<ul>
+					<li><strong>Confirmação da existência de tratamento:</strong> o titular tem o direito de obter a confirmação de que seus dados pessoais estão sendo tratados.</li>
+					<li><strong>Acesso aos dados:</strong> o titular pode solicitar o acesso aos seus dados pessoais tratados, bem como informações sobre a origem dos dados, os critérios utilizados e a finalidade do tratamento.</li>
+				</ul>				
+				<p><strong>6.2. Correção de Dados</strong></p>
+				<p>O titular pode solicitar a correção de dados pessoais incompletos, inexatos ou desatualizados.</p>
+				<p><strong>6.3. Limitações ao Exercício de Direitos</strong></p>
+				<p>Considerando que o sistema Confia Paraná é uma iniciativa da administração pública estadual, destinada ao cumprimento de obrigações legais e à execução de políticas públicas, algumas limitações se aplicam aos direitos dos titulares:</p>
+				<ul>
+					<li><strong>Impossibilidade de exclusão de dados:</strong> os dados pessoais tratados no sistema são necessários para o cumprimento de obrigações legais e regulatórias, não sendo possível a exclusão desses dados mediante solicitação do titular.</li>
+					<li><strong>Manutenção de registros de comunicação:</strong> as comunicações realizadas por meio do módulo de chat entre auditores fiscais, sócios e contadores são registradas e armazenadas para fins de transparência e auditoria, não sendo possível a exclusão dessas mensagens.</li>
+				</ul>				
+				<p><strong>6.4. Informação sobre Compartilhamento de Dados</strong></p>
+				<p>O titular tem o direito de ser informado sobre as entidades públicas e privadas com as quais seus dados pessoais foram compartilhados, quando aplicável. Isso não se aplica se o compartilhamento for anonimizado nos termos do subitem 5.5 desta Política.</p>
+				<p><strong>6.5. Exercício dos Direitos</strong></p>
+				<p>Para exercer seus direitos, o titular deve entrar em contato com o Encarregado pelo Tratamento de Dados Pessoais da SEFA, por meio dos canais disponibilizados no site oficial: <a href="https://www.fazenda.pr.gov.br/Pagina/Lei-Geral-de-Protecao-de-Dados-LGPD">www.fazenda.pr.gov.br/Pagina/Lei-Geral-de-Protecao-de-Dados-LGPD</a>.</p>
+				<p>As solicitações serão atendidas conforme os prazos e procedimentos estabelecidos pela LGPD e demais normativas aplicáveis.</p>
+                <br/>
+            </li>
+			<li>
+				<h4>Transparência nas Comunicações via Chat</h4>
+				<p>O sistema Confia Paraná dispõe de um módulo de chat que permite a comunicação direta entre auditores fiscais da Receita Estadual do Paraná (REPR) e os representantes legais das empresas participantes do programa, incluindo sócios e contadores. Essa funcionalidade visa promover a transparência, a eficiência e a rastreabilidade nas interações relacionadas à conformidade tributária.</p>
+				<p><strong>7.1. Acesso Compartilhado às Conversas</strong></p>
+				<p>As conversas realizadas por meio do módulo de chat são acessíveis a todos os auditores fiscais que atuam no Programa Confia Paraná, independentemente de terem participado diretamente da comunicação. Essa medida assegura a continuidade das ações fiscais, facilita o acompanhamento das interações e permite a realização de auditorias internas para avaliação da qualidade e da efetividade das comunicações.</p>
+				<p><strong>7.2. Registro e Armazenamento das Comunicações</strong></p>
+				<p>Todas as mensagens trocadas no módulo de chat são registradas e armazenadas de forma segura, incluindo informações como data, hora e identificação dos participantes. Esses registros são considerados documentos oficiais e fazem parte do histórico de conformidade das empresas, podendo ser utilizados para fins de auditoria, controle e melhoria dos processos fiscais.</p>
+				<p><strong>7.3. Impossibilidade de Exclusão das Mensagens</strong></p>
+				<p>Em conformidade com as obrigações legais e institucionais da SEFA e da REPR, as mensagens registradas no módulo de chat não podem ser excluídas ou alteradas pelos usuários. Essa política visa garantir a integridade, a autenticidade e a rastreabilidade das informações, bem como preservar evidências que possam ser necessárias em processos administrativos ou judiciais.</p>
+				<p><strong>7.4. Consentimento e Ciência dos Usuários</strong></p>
+				<p>Ao utilizar o módulo de chat, os usuários declaram estar cientes de que:</p>
+				<ul>
+					<li>Todas as mensagens serão registradas e armazenadas;</li>
+					<li>As conversas poderão ser acessadas por outros auditores fiscais participantes do programa;</li>
+					<li>Não será possível solicitar a exclusão ou alteração das mensagens trocadas.	</li>
+				</ul>
+				<p>Essa ciência é formalizada no momento do primeiro acesso ao sistema, por meio da aceitação desta Política de Privacidade.</p>
+				<br/>
+			</li>
+            <li>
+                <h4>Segurança e Armazenamento dos Dados</h4>
+                <p>A SEFA e a REPR comprometem-se a adotar medidas técnicas e administrativas aptas a proteger os dados pessoais tratados no sistema Confia Paraná contra acessos não autorizados, situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão.</p>
+				<p><strong>8.1. Medidas de Segurança Implementadas</strong></p>
+				<p>Para garantir a integridade, confidencialidade e disponibilidade dos dados pessoais, são implementadas as seguintes medidas de segurança:</p>
+				<ul>
+					<li><strong>Controle de Acesso:</strong> restrição de acesso aos dados pessoais apenas a pessoas autorizadas, mediante autenticação adequada.</li>
+					<li><strong>Criptografia:</strong> utilização de protocolos de criptografia para proteger os dados durante a transmissão e o armazenamento.</li>
+					<li><strong>Monitoramento e Auditoria:</strong> registro e análise de logs de acesso e atividades no sistema para detectar e responder a incidentes de segurança.</li>
+					<li><strong>Backup e Recuperação:</strong> realização de cópias de segurança periódicas e planos de recuperação de desastres para garantir a continuidade dos serviços.</li>
+					<li><strong>Atualizações e Patches:</strong> manutenção regular dos sistemas e aplicações, com a aplicação de atualizações e correções de segurança.</li>
+				</ul>
+				<p><strong>8.2. Armazenamento dos Dados</strong></p>
+				<p>Os dados pessoais tratados no sistema Confia Paraná são armazenados em ambientes seguros, com acesso controlado e monitorado, em conformidade com as políticas de segurança da informação da SEFA e da REPR. O armazenamento é realizado pelo tempo necessário para cumprir as finalidades legais e institucionais, respeitando os prazos estabelecidos pela legislação aplicável.</p>
+				<p><strong>8.3. Notificação de Incidentes de Segurança</strong></p>
+				<p>Em caso de incidentes de segurança que possam acarretar risco ou dano relevante aos titulares dos dados pessoais, a SEFA e a REPR comprometem-se a comunicar a Autoridade Nacional de Proteção de Dados (ANPD) e os titulares afetados, conforme previsto na LGPD. As medidas cabíveis serão adotadas para mitigar os efeitos do incidente e prevenir ocorrências futuras.</p>
+				<p>Qualquer incidente de segurança deverá ser reportado para: <a href="mailto:security@pr.gov.br">security@pr.gov.br</a></p>
+				<p><strong>8.4. Responsabilidade dos Usuários</strong></p>
+				<p>Os usuários do sistema Confia Paraná são responsáveis por manter a confidencialidade de suas credenciais de acesso e por adotar boas práticas de segurança, como a utilização de senhas fortes e a não divulgação de informações sensíveis a terceiros não autorizados.</p>
+                <br/>
+			</li>
+            <li>
+                <h4>Opção pela Não Divulgação Pública das Notas</h4>
+				<p>O sistema Confia Paraná visa promover a transparência e a conformidade tributária das empresas no Estado do Paraná. Como parte desse objetivo, as notas atribuídas às empresas participantes podem ser disponibilizadas em portais públicos, permitindo o acesso por terceiros interessados.</p>
+				<p>Entretanto, reconhecendo o direito à privacidade e à proteção de dados pessoais dos titulares, conforme estabelecido na LGPD, as empresas participantes têm a opção de solicitar a não divulgação pública de suas notas.</p>
+				<p><strong>9.1. Procedimento para Solicitação</strong></p>
+				<p>Para exercer o direito de não divulgação pública das notas, o representante legal da empresa (sócio ou contador devidamente autorizado) deverá:</p>
+				<ul>
+					<li>Acessar o sistema Confia Paraná com suas credenciais;</li>
+					<li>Identificar ou buscar a empresa para a qual objetiva a alteração da divulgação;</li>
+					<li>Clicar na opção correspondente à “Não divulgação”.</li>
+				</ul>
+                <p>Após a confirmação, a solicitação será processada e a nota da empresa deixará de ser exibida no portal público do Programa no prazo regulamentar.</p>
+				<p><strong>9.2. Considerações Importantes</strong></p>
+				<ul>
+					<li>A opção pela não divulgação pública das notas não impede o tratamento interno dos dados pela SEFA e pela REPR, conforme as finalidades legais e institucionais do programa.</li>
+					<li>A solicitação de não divulgação pública é reversível. A qualquer momento, o representante legal da empresa poderá optar por tornar a nota novamente disponível nos portais públicos, seguindo o procedimento inverso.</li>
+					<li>Mesmo com a opção pela não divulgação pública, os dados e as notas poderão ser compartilhados com outros órgãos públicos, quando necessário, para o cumprimento de obrigações legais, conforme previsto na legislação vigente.</li>
+				</ul>
+                <br/>
+            </li>
+            <li>
+                <h4>Cookies e Tecnologias de Rastreamento</h4>
+                <p>O sistema Confia Paraná utiliza cookies e tecnologias similares para aprimorar a experiência do usuário, garantir a segurança das informações e viabilizar funcionalidades essenciais. Essas tecnologias são empregadas em conformidade com a LGPD e demais normativas aplicáveis.</p>
+				<p><strong>10.1. O que são Cookies</strong></p>
+				<p>Cookies são pequenos arquivos de texto armazenados no dispositivo do usuário (computador, smartphone, tablet) quando este acessa um site ou sistema. Eles permitem o reconhecimento do dispositivo, facilitam a navegação e possibilitam a oferta de serviços personalizados.</p>
+				<p><strong>10.2. Finalidades do Uso de Cookies</strong></p>
+				<p>O sistema Confia Paraná utiliza cookies para as seguintes finalidades:</p>
+				<ul>
+					<li><strong>Cookies estritamente necessários:</strong> Essenciais para o funcionamento do sistema, permitindo, por exemplo, a autenticação de usuários e a manutenção de sessões seguras.</li>
+					<li><strong>Cookies de desempenho:</strong> Coletam informações sobre como os usuários utilizam o sistema, como páginas visitadas e eventuais erros, visando aprimorar o desempenho e a usabilidade.</li>
+					<li><strong>Cookies de funcionalidade:</strong> Permitem que o sistema armazene escolhas feitas pelo usuário (como idioma ou região), proporcionando uma experiência mais personalizada.</li>
+				</ul>
+				<p>Não são utilizados cookies para fins de marketing ou publicidade no sistema Confia Paraná.</p>
+				<p><strong>10.3. Gerenciamento de Cookies</strong></p>
+				<p>O usuário pode, a qualquer momento, configurar seu navegador para recusar ou remover cookies. No entanto, é importante ressaltar que a desativação de cookies essenciais pode comprometer o funcionamento adequado do sistema. Para mais informações sobre como gerenciar cookies, consulte as configurações do seu navegador.</p>
+				<p><strong>10.4. Consentimento para o Uso de Cookies</strong></p>
+				<p>Ao acessar e utilizar o sistema Confia Paraná, o usuário concorda com o uso de cookies conforme descrito nesta política. Caso não concorde, é recomendável ajustar as configurações do navegador conforme indicado no item 10.3.</p>
+                <br/>
+            </li>
+            <li>
+                <h4>Alterações na Política de Privacidade</h4>
+                <p>Esta Política de Privacidade poderá ser atualizada a qualquer momento pela SEFA e pela REPR, em decorrência de alterações normativas, mudanças nas práticas de tratamento de dados pessoais ou aprimoramentos nas funcionalidades do sistema Confia Paraná.</p>
+				<p><strong>11.1. Comunicação das Alterações</strong></p>
+				<p>As alterações nesta Política de Privacidade serão comunicadas aos usuários por meio de:</p>
+				<ul>
+					<li>Publicação da nova versão no site oficial do sistema Confia Paraná;</li>
+					<li>Notificações no próprio sistema;</li>
+				</ul>
+				<p>Quando e se esta Política for alterada, o usuário será solicitado a confirmar com o seu novo conteúdo para continuar tendo acesso às funcionalidades.</p>
+                <br/>
+            </li>
+			<li>
+				<h4>Contato com o Encarregado pelo Tratamento de Dados Pessoais</h4>
+				<p>Em conformidade com o artigo 41 da LGPD, a SEFA e a REPR designaram encarregados pelo tratamento de dados pessoais, responsáveis por atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD).</p>
+				<p><strong>12.1. Encarregado de dados da SEFA e da REPR</strong></p>
+				<p>Os titulares de dados pessoais podem entrar em contato com os encarregados para tratar de assuntos relacionados ao tratamento de seus dados, incluindo solicitações, dúvidas, reclamações ou sugestões, por meio do seguinte endereço:<br/><a href="https://www.fazenda.pr.gov.br/Pagina/Encarregados-pelo-Tratamento-de-Dados-Pessoais">www.fazenda.pr.gov.br/Pagina/Encarregados-pelo-Tratamento-de-Dados-Pessoais</a></p>
+				<br/>
+			</li>
+		</ol>
+		<h2>Termos e Condições de Uso</h2>
+			<ol>
+			<li>
+                <h4>Aceitação dos Termos de Uso</h4>
+				<p>O acesso e a utilização do sistema Confia Paraná estão condicionados à leitura, compreensão e aceitação integral destes Termos de Uso e da respectiva Política de Privacidade. Ao utilizar o sistema, o usuário declara estar ciente e concordar com todas as disposições aqui estabelecidas, comprometendo-se a cumpri-las integralmente.</p>
+				<p>Estes Termos de Uso constituem um acordo legal entre o usuário e a Secretaria da Fazenda do Estado do Paraná (SEFA), responsável pela gestão do sistema Confia Paraná. Caso o usuário não concorde com quaisquer dos termos e condições aqui previstos, recomenda-se que não utilize o sistema.</p>
+				<p>A aceitação destes Termos de Uso é indispensável para o acesso e a utilização das funcionalidades oferecidas pelo sistema Confia Paraná.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Definições</h4>
+				<p>Para fins destes Termos de Uso, adotam-se as seguintes definições e significados dos respectivos acrônimos:</p>
+				<ul>
+					<li>SEFA: Secretaria da Fazenda do Estado do Paraná;</li>
+					<li>REPR: Receita Estadual do Paraná;</li>
+					<li>Confia Paraná: Programa de Conformidade Fiscal Cooperativa do Estado do Paraná;</li>
+					<li>Sistema Confia Paraná: Plataforma digital acessível por meio do endereço eletrônico https://confia.receita.pr.gov.br, destinada à operacionalização do Programa Confia Paraná, permitindo aos usuários:</li>
+					<li>Consultar a classificação de conformidade fiscal das empresas das quais são representantes legais (sócios), contadores ou auditores fiscais;</li>
+					<li>Identificar eventuais não conformidades fiscais e obter orientações para sua correção;</li>
+					<li>Comunicar-se com auditores fiscais por meio de módulo de chat, com registros acessíveis a todos os auditores participantes do programa;</li>
+					<li>Gerenciar preferências relacionadas à divulgação pública das notas de conformidade fiscal das empresas representadas.</li>
+					<li>Usuário: Pessoa física que acessa e utiliza o sistema Confia Paraná, na qualidade de sócio, contador ou auditor fiscal, conforme suas credenciais de acesso.</li>
+				</ul>
+				<br/>
+			</li>
+			<li>
+				<h4>Descrição dos Serviços</h4>
+				<p>O sistema Confia Paraná é uma plataforma digital desenvolvida pela SEFA e pela REPR com o objetivo de operacionalizar o Programa de Conformidade Fiscal Cooperativa do Estado do Paraná – Confia Paraná.</p>
+				<p>Por meio do sistema, os usuários podem:</p>
+				<ul>
+					<li>Consultar a classificação de conformidade fiscal das empresas das quais são representantes legais (sócios), contadores ou auditores fiscais;</li>
+					<li>Identificar eventuais não conformidades fiscais e obter orientações para sua correção;</li>
+					<li>Comunicar-se com auditores fiscais por meio de módulo de chat, com registros acessíveis a todos os auditores participantes do programa;</li>
+					<li>Gerenciar preferências relacionadas à divulgação pública das notas de conformidade fiscal das empresas representadas.</li>
+				</ul>
+				<p>O acesso ao sistema é restrito a usuários devidamente autorizados e autenticados, conforme as credenciais fornecidas pela SEFA.</p>
+				<p>As funcionalidades do sistema podem ser atualizadas ou modificadas a qualquer momento, visando aprimorar os serviços oferecidos e atender às necessidades do Programa Confia Paraná.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Obrigações do Usuário</h4>
+				<p>Ao utilizar o sistema Confia Paraná, o usuário compromete-se a:</p>
+				<ul>
+					<li><strong>Fornecer informações verídicas e atualizadas:</strong> O usuário é responsável pela precisão e veracidade dos dados informados, reconhecendo que a inconsistência destes poderá implicar a impossibilidade de utilizar o sistema.</li>
+					<li><strong>Utilizar suas próprias credenciais de acesso:</strong> O login e a senha são pessoais e intransferíveis. O usuário compromete-se a manter o sigilo de suas credenciais, não sendo possível, em qualquer hipótese, a alegação de uso indevido após o ato de compartilhamento.</li>
+					<li><strong>Atualizar suas informações pessoais nos sistemas de origem:</strong> O usuário é responsável por manter suas informações pessoais atualizadas e pelas consequências em caso de omissão ou erros nos dados fornecidos. O sistema utiliza informações contidas em outras aplicações da Receita Estadual, inclusive quanto ao contabilista responsável e sócio. Assim, eventuais alterações devem ser comunicadas de imediato à REPR para que surtam os efeitos desejados.</li>
+					<li><strong>Utilizar o sistema conforme as finalidades estabelecidas:</strong> O usuário compromete-se a utilizar o sistema de acordo com as finalidades para as quais foi desenvolvido, abstendo-se de práticas que possam comprometer a segurança ou integridade do sistema.</li>
+					<li><strong>Responder por danos causados:</strong> O usuário é responsável pela reparação de todos e quaisquer danos, diretos ou indiretos, que sejam causados à Administração Pública, a qualquer outro usuário ou a terceiros, inclusive em virtude do descumprimento do disposto nestes Termos de Uso ou de qualquer ato praticado a partir de seu acesso ao sistema.</li> 
+				</ul>
+				<p>A SEFA/PR e a REPR não se responsabilizam por falhas decorrentes de:</p>
+				<ul>
+					<li>Equipamento infectado ou invadido por atacantes;</li> 
+					<li>Equipamento avariado no momento do consumo de serviços;</li>
+					<li>Abuso de uso dos computadores dos usuários;</li>
+					<li>Monitoração clandestina do computador dos usuários;</li>
+					<li>Vulnerabilidades ou instabilidades existentes nos sistemas dos usuários.</li>
+				</ul>
+				<p>Em nenhuma hipótese, a SEFA e a REPR serão responsáveis pela instalação, no equipamento do usuário ou de terceiros, de códigos maliciosos (vírus, trojans, malware, worm, bot, backdoor, spyware, rootkit ou de quaisquer outros que venham a ser criados), em decorrência da navegação na Internet pelo usuário.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Direitos Autorais e Propriedade Intelectual</h4>
+				<p>Todo o conteúdo disponibilizado no sistema Confia Paraná, incluindo, mas não se limitando a textos, imagens, logotipos, gráficos, ícones, vídeos, áudios, códigos-fonte, design, layout e funcionalidades, é de propriedade exclusiva da SEFA e da REPR, ou de terceiros que tenham autorizado seu uso, sendo protegido pela legislação vigente sobre direitos autorais e propriedade intelectual.</p>
+				<p>É vedada a reprodução, distribuição, modificação, exibição, transmissão ou qualquer outra forma de utilização do conteúdo do sistema Confia Paraná sem a prévia e expressa autorização da SEFA e da REPR, exceto nos casos permitidos pela legislação aplicável.</p>
+				<p>O uso indevido de qualquer conteúdo do sistema Confia Paraná poderá acarretar sanções civis e criminais, conforme previsto na legislação pertinente.</p>
+				<p>O usuário compromete-se a respeitar todos os direitos de propriedade intelectual da SEFA, da REPR e de terceiros, abstendo-se de praticar qualquer ato que possa violar tais direitos.</p>
+				<br/>
+		   </li>
+			<li>
+				<h4>Modificações nos Termos de Uso</h4>
+				<p>A SEFA e a REPR reservam-se o direito de, a qualquer momento, modificar, alterar ou atualizar estes Termos de Uso, visando aprimorar os serviços oferecidos e atender às necessidades do Programa Confia Paraná.</p>
+				<p>As alterações entrarão em vigor a partir da data de sua publicação no sistema Confia Paraná. No caso de eventuais modificações, os usuários terão acesso à nova versão e terão a oportunidade de aceitar ou rejeitar os novos termos.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Contato e Suporte</h4>
+				<p>Para esclarecimentos, dúvidas, sugestões ou solicitações relacionadas ao sistema Confia Paraná, os usuários podem entrar em contato com os canais oficiais disponibilizados pela SEFA e pela REPR.</p>
+				<p><strong>7.1 Canais de Atendimento</strong></p>
+				<p>Os usuários do sistema Confia Paraná podem entrar em contato com os seguintes canais oficiais para registrar manifestações, esclarecer dúvidas, acompanhar solicitações ou obter informações adicionais:</p>
+				<ul>
+					<li>
+						<p><strong>Serviço de Atendimento ao Cidadão (SAC) da Receita Estadual do Paraná:</strong></p>
+						<ul>
+							<li><strong>Telefones:</strong><br/>&bullet; Curitiba e Região Metropolitana: (41) 3200-5009<br/>&bullet; Demais localidades: 0800-041-1528</li>
+							<li><strong>Horário de atendimento:</strong> Segunda a sexta-feira, das 7h às 19h (exceto feriados)</li>
+							<li><strong>Fale Conosco (atendimento eletrônico):</strong> <a href="https://www.fazenda.pr.gov.br/webservices/sefa/servicos">www.fazenda.pr.gov.br/webservices/sefa/servicos</a></li>
+						</ul>
+					</li>
+					<li>
+						<p><strong>Ouvidoria Geral do Estado do Paraná:</strong></p>
+						<ul>
+							<li><strong>Portal:</strong> <a href="https://www.ouvidoria.pr.gov.br">www.ouvidoria.pr.gov.br</a></li>
+							<li><strong>Telefone:</strong> 0800-41-1113</li>
+							<li><strong>Atendimento presencial ou por correspondência:</strong><br/>&bullet; Rua Mateus Leme, nº 2018, Centro Cívico, Curitiba/PR – CEP 80530-010<br/>&bullet; Horário de atendimento presencial: Segunda a sexta-feira, das 9h às 12h e das 13h30 às 17h.</li>
+						</ul>
+					</li>
+				</ul>
+				<br/>
+			</li>
+			<li>
+				<h4>Disposições Gerais</h4>
+				<p>Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil e pelas normas específicas do Estado do Paraná.</p>
+				<p>A tolerância ou o não exercício, por parte da SEFA ou da REPR, de quaisquer direitos ou disposições destes Termos de Uso não constituirá renúncia, novação ou alteração destes Termos.</p>
+				<p>Caso qualquer cláusula ou disposição destes Termos de Uso seja considerada inválida, ilegal ou inexequível, as demais permanecerão em pleno vigor e efeito, e a cláusula afetada será interpretada de forma a refletir, na máxima extensão possível, a intenção original.</p>
+				<p>Em caso de dúvidas, sugestões ou reclamações relacionadas a estes Termos de Uso ou ao sistema Confia Paraná, o usuário poderá entrar em contato por meio dos canais de atendimento disponibilizados no item 7.1 destes Termos.</p>
+				<br/>
+			</li>
+		</ol>
+		<small>Última atualização em: 09/06/2025</small>
+		<br/>
+    </div>
+</body>
+</html>
