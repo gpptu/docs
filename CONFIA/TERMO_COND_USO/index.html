@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style>
+	* {
+		-webkit-transition: 200ms;
+		-moz-transition: 200ms;
+		-ms-transition: 200ms;
+		-o-transition: 200ms;
+		transition: 200ms;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	a, a:visited, a:hover, a:active {
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		position: relative;
+		transition: 0.5s color ease;
+		text-decoration: none;
+	}
+
+	a.before:before, a.after:after {
+		content: "";
+		transition: 0.5s all ease;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		position: absolute;
+	}
+
+	a.before:before {
+		top: -0.25em;
+	}
+
+	a.after:after {
+		bottom: -0.25em;
+	}
+
+	a.before:before, a.after:after {
+		height: 3px;
+		height: 0.1rem;
+		width: 0;
+		background: #f7f7f7;
+	}
+
+	a.before:hover:before, a.after:hover:after {
+		width: 100%;
+	}
+
+	body {
+		color: #024257;
+		font-family: Gibson, Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		line-height: 1.4em;
+		font-weight: normal;
+		/*padding: 20px 30px;*/
+	}
+
+	h1, h2, h3, h4, h5 {
+		font-family: Gibson, Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		line-height: 1.5em;
+		margin: .45em 0;
+		padding: 0;
+	}
+
+	h1 {
+		color: #9322df;
+	}
+		
+	h2 {
+		margin: 2em 0;
+		font-size: 1.6em;
+		text-align: center;
+	}
+
+	h6 {
+		color: #045772;
+	}
+
+	/* links */
+	a, a:visited, a:active, a:hover {
+		color: #9322df;
+		hyphens: none !important;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	* {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	/*colors and backgrounds*/
+	body {
+		background: #ffffff;
+	}
+
+	h1, h2, h3, h4, h5 {
+		color: #045772;
+	}
+
+	table {
+		display: table;
+		border-collapse: separate;
+		box-sizing: border-box;
+		text-indent: initial;
+		unicode-bidi: isolate;
+		border-spacing: 0px;
+		border: 1px solid #045772;
+	}
+
+	.table td, .table th {
+		padding: .75rem;
+		vertical-align: top;
+		border: 0.5px solid #045772;
+	}
+
+    .content {
+        padding: 0 clamp(1rem, 5vw, 5rem);
+        max-width: 1200px;
+        margin: 0 auto;
+		position: relative;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+    }
+    @media (max-width: 768px) {
+        .content {
+            padding: 0 clamp(1rem, 4vw, 3rem);
+        }
+    }
+    @media (max-width: 480px) {
+        .content {
+            padding: 0 clamp(1rem, 3vw, 2rem);
+        }
+    }
+		
+	.content small {
+		margin-top: 50px;
+		display: block;
+		text-align: right; /* Use this to align to the right */
+	}
+	.content::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	</style>
+	<title>Termo e Condições de Uso</title>
+</head>
+<body>
+	<h2>Termo e Condições de Uso</h2>
+	<div class="content">
+		<ol>
+			<li>
+                <h4>Aceitação dos Termos de Uso</h4>
+				<p>O acesso e a utilização do sistema Confia Paraná estão condicionados à leitura, compreensão e aceitação integral destes Termos de Uso e da respectiva Política de Privacidade. Ao utilizar o sistema, o usuário declara estar ciente e concordar com todas as disposições aqui estabelecidas, comprometendo-se a cumpri-las integralmente.</p>
+				<p>Estes Termos de Uso constituem um acordo legal entre o usuário e a Secretaria da Fazenda do Estado do Paraná (SEFA), responsável pela gestão do sistema Confia Paraná. Caso o usuário não concorde com quaisquer dos termos e condições aqui previstos, recomenda-se que não utilize o sistema.</p>
+				<p>A aceitação destes Termos de Uso é indispensável para o acesso e a utilização das funcionalidades oferecidas pelo sistema Confia Paraná.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Definições</h4>
+				<p>Para fins destes Termos de Uso, adotam-se as seguintes definições e significados dos respectivos acrônimos:</p>
+				<ul>
+					<li>SEFA: Secretaria da Fazenda do Estado do Paraná;</li>
+					<li>REPR: Receita Estadual do Paraná;</li>
+					<li>Confia Paraná: Programa de Conformidade Fiscal Cooperativa do Estado do Paraná;</li>
+					<li>Sistema Confia Paraná: Plataforma digital acessível por meio do endereço eletrônico https://confia.receita.pr.gov.br, destinada à operacionalização do Programa Confia Paraná, permitindo aos usuários:</li>
+					<li>Consultar a classificação de conformidade fiscal das empresas das quais são representantes legais (sócios), contadores ou auditores fiscais;</li>
+					<li>Identificar eventuais não conformidades fiscais e obter orientações para sua correção;</li>
+					<li>Comunicar-se com auditores fiscais por meio de módulo de chat, com registros acessíveis a todos os auditores participantes do programa;</li>
+					<li>Gerenciar preferências relacionadas à divulgação pública das notas de conformidade fiscal das empresas representadas.</li>
+					<li>Usuário: Pessoa física que acessa e utiliza o sistema Confia Paraná, na qualidade de sócio, contador ou auditor fiscal, conforme suas credenciais de acesso.</li>
+				</ul>
+				<br/>
+			</li>
+			<li>
+				<h4>Descrição dos Serviços</h4>
+				<p>O sistema Confia Paraná é uma plataforma digital desenvolvida pela SEFA e pela REPR com o objetivo de operacionalizar o Programa de Conformidade Fiscal Cooperativa do Estado do Paraná – Confia Paraná.</p>
+				<p>Por meio do sistema, os usuários podem:</p>
+				<ul>
+					<li>Consultar a classificação de conformidade fiscal das empresas das quais são representantes legais (sócios), contadores ou auditores fiscais;</li>
+					<li>Identificar eventuais não conformidades fiscais e obter orientações para sua correção;</li>
+					<li>Comunicar-se com auditores fiscais por meio de módulo de chat, com registros acessíveis a todos os auditores participantes do programa;</li>
+					<li>Gerenciar preferências relacionadas à divulgação pública das notas de conformidade fiscal das empresas representadas.</li>
+				</ul>
+				<p>O acesso ao sistema é restrito a usuários devidamente autorizados e autenticados, conforme as credenciais fornecidas pela SEFA.</p>
+				<p>As funcionalidades do sistema podem ser atualizadas ou modificadas a qualquer momento, visando aprimorar os serviços oferecidos e atender às necessidades do Programa Confia Paraná.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Obrigações do Usuário</h4>
+				<p>Ao utilizar o sistema Confia Paraná, o usuário compromete-se a:</p>
+				<ul>
+					<li><strong>Fornecer informações verídicas e atualizadas:</strong> O usuário é responsável pela precisão e veracidade dos dados informados, reconhecendo que a inconsistência destes poderá implicar a impossibilidade de utilizar o sistema.</li>
+					<li><strong>Utilizar suas próprias credenciais de acesso:</strong> O login e a senha são pessoais e intransferíveis. O usuário compromete-se a manter o sigilo de suas credenciais, não sendo possível, em qualquer hipótese, a alegação de uso indevido após o ato de compartilhamento.</li>
+					<li><strong>Atualizar suas informações pessoais nos sistemas de origem:</strong> O usuário é responsável por manter suas informações pessoais atualizadas e pelas consequências em caso de omissão ou erros nos dados fornecidos. O sistema utiliza informações contidas em outras aplicações da Receita Estadual, inclusive quanto ao contabilista responsável e sócio. Assim, eventuais alterações devem ser comunicadas de imediato à REPR para que surtam os efeitos desejados.</li>
+					<li><strong>Utilizar o sistema conforme as finalidades estabelecidas:</strong> O usuário compromete-se a utilizar o sistema de acordo com as finalidades para as quais foi desenvolvido, abstendo-se de práticas que possam comprometer a segurança ou integridade do sistema.</li>
+					<li><strong>Responder por danos causados:</strong> O usuário é responsável pela reparação de todos e quaisquer danos, diretos ou indiretos, que sejam causados à Administração Pública, a qualquer outro usuário ou a terceiros, inclusive em virtude do descumprimento do disposto nestes Termos de Uso ou de qualquer ato praticado a partir de seu acesso ao sistema.</li> 
+				</ul>
+				<p>A SEFA/PR e a REPR não se responsabilizam por falhas decorrentes de:</p>
+				<ul>
+					<li>Equipamento infectado ou invadido por atacantes;</li> 
+					<li>Equipamento avariado no momento do consumo de serviços;</li>
+					<li>Abuso de uso dos computadores dos usuários;</li>
+					<li>Monitoração clandestina do computador dos usuários;</li>
+					<li>Vulnerabilidades ou instabilidades existentes nos sistemas dos usuários.</li>
+				</ul>
+				<p>Em nenhuma hipótese, a SEFA e a REPR serão responsáveis pela instalação, no equipamento do usuário ou de terceiros, de códigos maliciosos (vírus, trojans, malware, worm, bot, backdoor, spyware, rootkit ou de quaisquer outros que venham a ser criados), em decorrência da navegação na Internet pelo usuário.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Direitos Autorais e Propriedade Intelectual</h4>
+				<p>Todo o conteúdo disponibilizado no sistema Confia Paraná, incluindo, mas não se limitando a textos, imagens, logotipos, gráficos, ícones, vídeos, áudios, códigos-fonte, design, layout e funcionalidades, é de propriedade exclusiva da SEFA e da REPR, ou de terceiros que tenham autorizado seu uso, sendo protegido pela legislação vigente sobre direitos autorais e propriedade intelectual.</p>
+				<p>É vedada a reprodução, distribuição, modificação, exibição, transmissão ou qualquer outra forma de utilização do conteúdo do sistema Confia Paraná sem a prévia e expressa autorização da SEFA e da REPR, exceto nos casos permitidos pela legislação aplicável.</p>
+				<p>O uso indevido de qualquer conteúdo do sistema Confia Paraná poderá acarretar sanções civis e criminais, conforme previsto na legislação pertinente.</p>
+				<p>O usuário compromete-se a respeitar todos os direitos de propriedade intelectual da SEFA, da REPR e de terceiros, abstendo-se de praticar qualquer ato que possa violar tais direitos.</p>
+				<br/>
+		   </li>
+			<li>
+				<h4>Modificações nos Termos de Uso</h4>
+				<p>A SEFA e a REPR reservam-se o direito de, a qualquer momento, modificar, alterar ou atualizar estes Termos de Uso, visando aprimorar os serviços oferecidos e atender às necessidades do Programa Confia Paraná.</p>
+				<p>As alterações entrarão em vigor a partir da data de sua publicação no sistema Confia Paraná. No caso de eventuais modificações, os usuários terão acesso à nova versão e terão a oportunidade de aceitar ou rejeitar os novos termos.</p>
+				<br/>
+			</li>
+			<li>
+				<h4>Contato e Suporte</h4>
+				<p>Para esclarecimentos, dúvidas, sugestões ou solicitações relacionadas ao sistema Confia Paraná, os usuários podem entrar em contato com os canais oficiais disponibilizados pela SEFA e pela REPR.</p>
+				<p><strong>7.1 Canais de Atendimento</strong></p>
+				<p>Os usuários do sistema Confia Paraná podem entrar em contato com os seguintes canais oficiais para registrar manifestações, esclarecer dúvidas, acompanhar solicitações ou obter informações adicionais:</p>
+				<ul>
+					<li>
+						<p><strong>Serviço de Atendimento ao Cidadão (SAC) da Receita Estadual do Paraná:</strong></p>
+						<ul>
+							<li><strong>Telefones:</strong><br/>&bullet; Curitiba e Região Metropolitana: (41) 3200-5009<br/>&bullet; Demais localidades: 0800-041-1528</li>
+							<li><strong>Horário de atendimento:</strong> Segunda a sexta-feira, das 7h às 19h (exceto feriados)</li>
+							<li><strong>Fale Conosco (atendimento eletrônico):</strong> <a href="https://www.fazenda.pr.gov.br/webservices/sefa/servicos">www.fazenda.pr.gov.br/webservices/sefa/servicos</a></li>
+						</ul>
+					</li>
+					<li>
+						<p><strong>Ouvidoria Geral do Estado do Paraná:</strong></p>
+						<ul>
+							<li><strong>Portal:</strong> <a href="https://www.ouvidoria.pr.gov.br">www.ouvidoria.pr.gov.br</a></li>
+							<li><strong>Telefone:</strong> 0800-41-1113</li>
+							<li><strong>Atendimento presencial ou por correspondência:</strong><br/>&bullet; Rua Mateus Leme, nº 2018, Centro Cívico, Curitiba/PR – CEP 80530-010<br/>&bullet; Horário de atendimento presencial: Segunda a sexta-feira, das 9h às 12h e das 13h30 às 17h.</li>
+						</ul>
+					</li>
+				</ul>
+				<br/>
+			</li>
+			<li>
+				<h4>Disposições Gerais</h4>
+				<p>Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil e pelas normas específicas do Estado do Paraná.</p>
+				<p>A tolerância ou o não exercício, por parte da SEFA ou da REPR, de quaisquer direitos ou disposições destes Termos de Uso não constituirá renúncia, novação ou alteração destes Termos.</p>
+				<p>Caso qualquer cláusula ou disposição destes Termos de Uso seja considerada inválida, ilegal ou inexequível, as demais permanecerão em pleno vigor e efeito, e a cláusula afetada será interpretada de forma a refletir, na máxima extensão possível, a intenção original.</p>
+				<p>Em caso de dúvidas, sugestões ou reclamações relacionadas a estes Termos de Uso ou ao sistema Confia Paraná, o usuário poderá entrar em contato por meio dos canais de atendimento disponibilizados no item 7.1 destes Termos.</p>
+				<br/>
+			</li>
+		</ol>
+		<small>Última atualização em: 09/06/2025</small>
+		<br/>
+    </div>
+</body>
+</html>
