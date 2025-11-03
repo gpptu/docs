@@ -49,12 +49,12 @@
 	}
 
 	body {
-		color: #045772;
+		color: #020202;
 		font-family: Gibson, Helvetica, Arial, sans-serif;
 		font-size: 1em;
 		line-height: 1.4em;
 		font-weight: normal;
-		padding: 20px 30px;
+		/*padding: 20px 30px;*/
 	}
 
 	h1, h2, h3, h4, h5 {
@@ -68,14 +68,21 @@
 	h1 {
 		color: #9322df;
 	}
+		
+	h2 {
+		margin: 2em 0;
+		font-size: 1.6em;
+		text-align: center;
+	}
 
 	h6 {
-		color: #045772;
+		color: #040404;
 	}
 
 	/* links */
 	a, a:visited, a:active, a:hover {
 		color: #9322df;
+		hyphens: none !important;
 	}
 
 	a:hover {
@@ -89,11 +96,19 @@
 
 	/*colors and backgrounds*/
 	body {
-		background: #f7f7f7;
+		background: #ffffff;
 	}
 
 	h1, h2, h3, h4, h5 {
-		color: #045772;
+		color: #040404;
+	}
+
+	h4, p, ul > li {
+		padding-bottom: 16px;
+	}
+
+	h4 {
+		text-transform: uppercase;
 	}
 
 	table {
@@ -103,61 +118,286 @@
 		text-indent: initial;
 		unicode-bidi: isolate;
 		border-spacing: 0px;
-		border: 1px solid #045772;
+		border: 1px solid #040404;
+	}
+
+	div > p, li > ul {
+		padding-left: 24px;
 	}
 
 	.table td, .table th {
 		padding: .75rem;
 		vertical-align: top;
-		border: 0.5px solid #045772;
+		border: 0.5px solid #040404;
 	}
 
 	.content {
-		padding: 0 10%;
+		padding: 0 clamp(1rem, 5vw, 5rem);
+		max-width: 1200px;
+		margin: 0 auto;
+		position: relative;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	@media (max-width: 768px) {
+		.content {
+			padding: 0 clamp(1rem, 4vw, 3rem);
+		}
+	}
+	@media (max-width: 480px) {
+		.content {
+			padding: 0 clamp(1rem, 3vw, 2rem);
+		}
+	}
+		
+	.content small {
+		margin-top: 50px;
+		display: block;
+		text-align: right; /* Use this to align to the right */
+	}
+	.content::after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 	</style>
 	<title>Política de Privacidade</title>
 </head>
 <body>
+	<h2>Política de Privacidade - Aplicativo Investigação SESP/PR</h2>
 	<div class="content">
-		<h2 style="text-align: center;">Política de Privacidade do Aplicativo Investigação Móvel</h2>
 		<ol>
 			<li>
-				<h4>O que fazemos com as suas informações</h4>
-				<p>O termo 'Informações Pessoais' usado aqui, é definido como qualquer informação que identifica ou pode ser usada para identificar, contatar ou localizar a pessoa, a quem tal informação pertence. As informações pessoais que coletamos estarão sujeitas a esta Política de Privacidade, a qual é alterada de tempos em tempos.</p>
-				<p>O Investigação Móvel utiliza as informações que são coletadas para os seguintes propósitos gerais: Manter seu histórico de consultas, identificar seu dispositivo e sua localização durante a utilização do aplicativo.</p>
-				<br/>
+				<h4>INTRODUÇÃO</h4>
+				<p>A Companhia de Tecnologia da Informação e Comunicação do Paraná (Celepar) na condição de <b>operadora</b> do tratamento dos dados e SESP/PR como <b>controladora</b> dos dados do aplicativo, agora denominados conjuntamente <b>Agentes de Tratamento</b>, apresentam esta política de privacidade em acordo com a Lei nº 13.709/18 (Lei Geral de Proteção de Dados Pessoais - LGPD).</p>
+				<p>Ambos os Agentes estão cientes da importância e do valor da privacidade na vida das pessoas. Por isso, por meio desta política de privacidade de dados pessoais, assumem o compromisso de respeitar a privacidade dos dados pessoais tratados e de adotar as providências necessárias e razoáveis à proteção destes dados contra qualquer forma de tratamento ilícito, seja na função de controladora ou de operadora.</p>
+				<p><b>Esta política será ajustada conforme a necessidade de adequação da proteção de dados pessoais à evolução tecnológica, a novos mecanismos de violação, a alterações das leis vigentes e à incorporação de novas funcionalidades.</b></p>
 			</li>
 			<li>
-				<h4>Divulgação</h4>
-				<p>O Investigação Móvel não divulga suas informações, exceto em circunstâncias especiais, como cooperar com possíveis investigações realizadas pelos órgãos responsáveis pela gestão da utilização do aplicativo, cumprir ordens judiciais obrigando-nos a fazê-lo ou quando suas ações violam os Termos de Serviço.</p>
-				<h5>O QUE SIGNIFICA</h5>
-				<p>Em circunstâncias onde seja necessário cumprir uma ordem judicial ou ocorra uma solicitação formal por parte de um dos órgãos gestores da utilização do Investigação Móvel, podemos fornecer suas informações de cadastro, dados de identificação e localização do dispositivo e histórico de consultas.</p>
-				<br/>
+				<h4>OBJETIVOS</h4>
+				<p>Esta Política de Privacidade de Dados Pessoais tem por objetivo estabelecer princípios, conceitos e responsabilidades para promover o adequado tratamento dos dados controlados pela SESP/PR e operados pela Celepar, focada em uma efetiva implementação dos direitos fundamentais da pessoa natural, sobretudo aqueles ligados à sua liberdade, intimidade, privacidade e personalidade.</p>
+				<p>Com esta Política de Tratamento de Dados Pessoais as organizações acima mencionadas apresentam quais dados pessoais são tratados, de que forma e para qual finalidade ocorrem os tratamentos, bem como as formas pelas quais os titulares e/ou seus responsáveis legais podem exercer os seus direitos com relação aos seus dados.</p>
 			</li>
 			<li>
-				<h4>Armazenamento de Dados do Usuário</h4>
-				<h5>DADOS</h5>
-				<p>Para utilizar o Investigação Móvel faz-se necessário o cadastro prévio no SESPIntranet, procedimento realizado pelo setor responsável de acordo com o órgão:</p>
+				<h4>GLOSSÁRIO</h4>
+				<p>Para melhor compreensão desta política, são definidos os seguintes termos:</p>
 				<ul>
-					<li>Polícia Científica: Divisão de Tecnologia da Informação (DTI)</li>
-					<li>Policia Civil (PCPR): Coordenação de Informática (COIN)</li>
-					<li>Polícia Militar (PMPR): Diretoria de Desenvolvimento Tecnológico e Qualidade (DDTQ)</li>
-					<li>Secretaria de Estado da Segurança Pública e Administração Penitenciária (SESP): Núcleo de Informática e Informações (NII)</li>
+					<li><b>Anonimização:</b> é o processo de transformar o dado pessoal em um dado impossível de ser revertido de forma identificável. O fato é que houve uma transformação que não permite voltar ao que era antes.</li>
+					<li><b>Cookie:</b> é um dado que o website solicita ao seu navegador para armazenar no seu computador ou dispositivo móvel. O cookie permite que o website "lembre" as ações ou preferências do usuário ao longo do tempo.</li>
+					<li><b>Dado Pessoal:</b> de acordo com o que preceitua a LGPD, é a informação relacionada a pessoa natural identificada ou identificável.</li>
+					<li><b>Dado Pessoal Sensível:</b> de acordo com o que preceitua a LGPD, são os dados pessoais sobre a origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dados referentes à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural.</li>
+					<li><b>DPO (Data Protection Officer) ou Encarregado:</b> sigla para Data Protection Officer, expressão em inglês correspondente ao encarregado pelo tratamento de dados pessoais ou apenas encarregado de dados.</li>
+					<li><b>Medidas de Segurança Física:</b> objetivam prevenir o acesso físico não autorizado, como o estabelecimento de perímetros de segurança, controles de entrada física, segurança em salas e instalações, e proteção dos equipamentos contra ameaças ambientais.</li>
+					<li><b>Medidas de Segurança Organizacional:</b> visam estabelecer uma estrutura de gerenciamento da implantação e operação da segurança da informação dentro da organização, com medidas como definição de responsabilidades e papéis, segregação de funções, classificação de ativos e de informações, gestão de mudanças, cópias de segurança, dentre outras.</li>
+					<li><b>Medidas de Segurança Técnica:</b> visam a proteção dos dados por meio de controles lógicos de acesso a aplicativos, dados, sistemas operacionais, senhas e arquivos por meio de firewalls de hardwares e softwares, criptografia, antivírus, dentre outras.</li>
+					<li><b>Pseudonimização:</b> é uma anonimização temporária, ou seja, através de mecanismos que são armazenados separadamente, possa voltar as informações ao seu estado original.</li>
+					<li><b>Tratamento de Dados:</b> de acordo com a LGPD, consiste em toda a operação realizada com dados pessoais, como as que se referem a coleta, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração.</li>
 				</ul>
-				<p>Adicionalmente, o aplicativo coleta informações de localização (coordenadas de posicionamento do aparelho no momento da consulta), identificação do dispositivo (IMEI, número de telefone e identificador fornecido pelo sistema oparacional) e registra o histórico de utilização.</p>
-				<br/>
 			</li>
 			<li>
-				<h4>Alterações a esta Política de Privacidade</h4>
-				<p>Reservamos o direito de modificar esta declaração de privacidade a qualquer momento, portanto, revise-a frequentemente. Se fizermos alterações materiais a esta política, iremos notificá-lo aqui, por avisos no aplicativo Investigação Móvel ou por uma notícia no SESPIntranet, para que você esteja sempre ciente das informações que coletamos, como as usamos e sob quais circunstâncias, se houver, as divulgamos.</p>
-				<h5>O QUE SIGNIFICA</h5>
-				<p>Podemos alterar esta Política de Privacidade. Se for uma grande mudança, iremos informá-lo através dos canais disponíveis.</p>
-				<br/>
+				<h4>PRINCÍPIOS DA LGPD</h4>
+				<p>O Aplicativo "Investigação SESP/PR" e os Agentes de Tratamento comprometem-se a cumprir as normas previstas na Lei Geral de Proteção de Dados (LGPD), e respeitar os seguintes princípios dispostos no Art. 6º:</p>
+				<div>
+					<p>I - <b>Finalidade</b>: realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior de forma incompatível com essas finalidades;</p>
+					<p>II - <b>Adequação</b>: compatibilidade do tratamento com as finalidades informadas ao titular, de acordo com o contexto do tratamento;</p>
+					<p>III - <b>Necessidade</b>: limitação do tratamento ao mínimo necessário para a realização de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos em relação às finalidades do tratamento de dados;</p>
+					<p>IV - <b>Livre Acesso</b>: garantia, aos titulares, de consulta facilitada e gratuita sobre a forma e a duração do tratamento, bem como sobre a integralidade de seus dados pessoais;</p>
+					<p>V - <b>Qualidade dos Dados</b>: garantia, aos titulares, de exatidão, clareza, relevância e atualização dos dados, de acordo com a necessidade e para o cumprimento da finalidade de seu tratamento;</p>
+					<p>VI - <b>Transparência</b>: garantia, aos titulares, de informações claras, precisas e facilmente acessíveis sobre a realização do tratamento e os respectivos agentes de tratamento, observados os segredos comercial e industrial;</p>
+					<p>VII - <b>Segurança</b>: utilização de medidas técnicas e administrativas aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão;</p>
+					<p>VIII - <b>Prevenção</b>: adoção de medidas para prevenir a ocorrência de danos em virtude do tratamento de dados pessoais;</p>
+					<p>IX - <b>Não Discriminação</b>: impossibilidade de realização do tratamento para fins discriminatórios ilícitos ou abusivos;</p>
+					<p>X - <b>Responsabilização e Prestação de Contas</b>: demonstração, pelo agente, da adoção de medidas eficazes e capazes de comprovar a observância e o cumprimento das normas de proteção de dados pessoais e, inclusive, da eficácia dessas medidas.</p>
+				</div>
 			</li>
+			<li>
+				<h4>BASE LEGAL DO TRATAMENTO</h4>
+				<p>5.1. <b>Fundamentos de Legalidade:</b></p>
+				<p>O tratamento de dados pelo aplicativo Investigação SESP/PR baseia-se nas seguintes hipóteses legais:</p>
+				<ul>
+					<li>Exercício de atribuições legais (Art. 7º, II da LGPD): Para cumprimento das atribuições constitucionais dos órgãos de segurança pública previstas no Art. 144 da Constituição Federal e na Lei Estadual que disciplina a organização da SESP/PR;</li>
+					<li>Execução de política pública (Art. 7º, V da LGPD): Para implementação de políticas de segurança pública estabelecidas no Plano Plurianual do Estado do Paraná e no Regimento Interno da SESP/PR;</li>
+					<li>Exercício regular de direitos (Art. 7º, VI da LGPD): Para o exercício regular de direitos em processos administrativos e judiciais de natureza penal.</li>
+				</ul>
+				<p>5.2. <b>Tratamento de Dados Sensíveis:</b></p>
+				<p>O tratamento de dados sensíveis, quando ocorrer, será realizado com base no Art. 11, II, "b" da LGPD (exercício regular de direitos) e Art. 11, II, "f" da LGPD (prevenção à prática de infrações penais), limitando-se estritamente às categorias de dados sensíveis necessárias para o cumprimento das finalidades legais de segurança pública, tais como:</p>
+				<ul>
+					<li>Dados biométricos para identificação criminal</li>
+					<li>Dados de saúde quando relevantes para investigações</li>
+					<li>Origem racial ou étnica para estatísticas criminais e identificação</li>
+				</ul>
+			</li>
+			<li>
+				<h4>CANAIS DE ATENDIMENTO AO TITULAR</h4>
+				<p>6.1. <b>Exercício de Direitos:</b></p>
+				<p>Os titulares dos dados podem exercer seus direitos previstos no Art. 18 da LGPD através dos seguintes canais oficiais:</p>
+				<ul>
+					<li>Ouvidoria Geral do Estado do Paraná: <a href="https://www.ouvidoria.pr.gov.br" target="_blank">https://www.ouvidoria.pr.gov.br</a></li>
+					<li>Encarregado de Dados (DPO) da SESP/PR: <a href="mailto:lgpd@sesp.pr.gov.br" target="_blank">lgpd@sesp.pr.gov.br</a></li>
+					<li>Encarregado de Dados (DPO) da Celepar: <a href="mailto:dpo@celepar.pr.gov.br" target="_blank">dpo@celepar.pr.gov.br</a></li>
+				</ul>
+				<p>6.2. <b>Procedimentos para Atendimento:</b></p>
+				<div>
+					<p>I - As solicitações serão analisadas conforme disposições legais aplicáveis, considerando as hipóteses de restrição de acesso previstas na LAI e normas de segurança pública</p>
+					<p>II - O prazo para resposta é de 15 (quinze) dias, prorrogável por igual período mediante justificativa</p>
+					<p>III - Não será cobrada taxa para exercício de direitos, exceto quando o titular requisitar a entrega por meio específico que implique custos adicionais</p>
+				</div>
+				<p>6.3. <b>Contato dos Agentes de Tratamento</b></p>
+				<ul>
+					<li><b>Operadora (Celepar):</b> O encarregado de proteção de dados (DPO) pode ser contatado pelo link <a href="www.celepar.pr.gov.br/dadospessoais" target="_blank">www.celepar.pr.gov.br/dadospessoais</a> ou e-mail <a href="mailto:dpo@celepar.pr.gov.br" target="_blank">dpo@celepar.pr.gov.br</a>.</li>
+					<li><b>Controladora (SESP/PR):</b> O encarregado de proteção de dados (DPO) pode ser contatado pelo link <a href="https://www.seguranca.pr.gov.br/Pagina/LGPD-Lei-Geral-de-Protecao-de-Dados" target="_blank">https://www.seguranca.pr.gov.br/Pagina/LGPD-Lei-Geral-de-Protecao-de-Dados</a> ou e-mail <a href="mailto:lgpd.sesp@sesp.pr.gov.br" target="_blank">lgpd.sesp@sesp.pr.gov.br</a>.</li>
+				</ul>
+			</li>
+			<li>
+				<h4>DADOS PESSOAIS TRATADOS PELO APLICATIVO INVESTIGAÇÃO SESP/PR</h4>
+				<p>7.1. <b>Dados dos Usuários Policiais</b></p>
+				<ul>
+					<li>Dados de identificação: Nome, CPF, matrícula funcional, lotação, cargo</li>
+					<li>Dados de autenticação: Credenciais de acesso, logs de autenticação</li>
+					<li>Dados de uso: Registros de consultas realizadas, data e hora de acesso, funcionalidades utilizadas</li>
+				</ul>
+				<p>7.2. <b>Dados Consultados por Meio do Aplicativo</b></p>
+				<ul>
+					<li>Dados de pessoas: Nome, CPF, RG, endereço, antecedentes criminais</li>
+					<li>Dados de veículos: Placa, chassi, renavam, modelo, cor, alertas de roubo</li>
+					<li>Dados de condutores: CNH, pontuação, restrições</li>
+					<li>Dados processuais: Mandados de prisão, boletins de ocorrência</li>
+				</ul>
+				<p>7.3. <b>Finalidade de Tratamento</b></p>
+				<p>O tratamento de dados pessoais é realizado com a finalidade de:</p>
+				<ul>
+					<li>Permitir o acesso seguro de policiais aos sistemas de consulta</li>
+					<li>Viabilizar consultas a bancos de dados policiais para fins de investigação e patrulhamento</li>
+					<li>Garantir a rastreabilidade e auditoria das consultas realizadas</li>
+					<li>Cumprir obrigações legais de segurança pública</li>
+				</ul>
+				<p>7.4. <b>Tipo de Tratamento</b></p>
+				<p>Os dados consultados pelo aplicativo são obtidos através de integração em tempo real com os sistemas corporativos da SESP/PR (SESPIntranet e demais bancos de dados policiais), garantindo que as informações estejam sempre atualizadas conforme as fontes oficiais.</p>
+			</li>
+			<li>
+				<h4>COMPARTILHAMENTO DE DADOS</h4>
+				<p>Para a execução das atividades de segurança pública, a SESP/PR poderá compartilhar dados com:</p>
+				<ul>
+					<li>Órgãos integrantes do Sistema de Segurança Pública</li>
+					<li>Autoridades judiciárias e do Ministério Público</li>
+					<li>Outros órgãos públicos, quando necessário para o cumprimento de finalidades legais</li>
+				</ul>
+				<p>O compartilhamento será realizado com estrita observância dos princípios da LGPD e das normas de sigilo e segurança da informação.</p>
+			</li>
+			<li>
+				<h4>TRANSFERÊNCIA INTERNACIONAL DE DADOS</h4>
+				<ul>
+					<li>Os dados tratados pelo aplicativo são armazenados exclusivamente em território nacional, em conformidade com o Art. 33 da LGPD.</li>
+					<li>Não há transferência internacional de dados pessoais para outros países.</li>
+				</ul>
+			</li>
+			<li>
+				<h4>MEDIDAS DE SEGURANÇA</h4>
+				<p>10.1. <b>Medidas Técnicas Implementadas:</b></p>
+				<ul>
+					<li>Criptografia: Dados em trânsito (TLS 1.2+) e em repouso (AES-256)</li>
+					<li>Autenticação: Mecanismo de autenticação forte com credenciais individuais</li>
+					<li>Controle de Acesso: Baseado em perfis e atribuições funcionais (RBAC)</li>
+					<li>Logs de Auditoria: Registro completo de todas as consultas realizadas</li>
+					<li>Mascaramento de Dados: Apresentação seletiva de informações conforme perfil</li>
+					<li>Token JWT: Com tempo de expiração configurado para sessões seguras</li>
+					<li>Canais de comunicação criptografados e mecanismos de tolerância a falhas</li>
+					<li>API Security: Proteção contra ataques com rate limiting e validação de entrada</li>
+				</ul>
+				<p>10.2. <b>Medidas Organizacionais:</b></p>
+				<ul>
+					<li>Treinamento periódico em proteção de dados para usuários</li>
+					<li>Política de senhas robustas e alteração periódica</li>
+					<li>Procedimentos para gestão de credenciais comprometidas</li>
+					<li>Segregação de funções e princípio do menor privilégio</li>
+				</ul>
+				<p>Qualquer problema de violação ou irregularidade em relação a segurança do aplicativo pode entrar em contato com <a href="mailto:security@pr.gov.br" target="_blank">security@pr.gov.br</a>.</p>
+			</li>
+			<li>
+				<h4>UTILIZAÇÃO DE COOKIES</h4>
+				<p><b>A Celepar utiliza cookies para</b>:</p>
+				<div>
+					<p>I - Identificar o usuário e gerir aspectos de segurança de acesso;</p>
+					<p>II - Lembrar preferências, escolhas de privacidade e configurações;</p>
+					<p>III - Tornar a navegação mais fácil e permitir que as páginas sejam exibidas corretamente;</p>
+					<p>IV - Analisar o desempenho dos sites com base em dados anônimos de navegação.</p>
+					<p><b>Os dados pessoais armazenados em cookies serão utilizados apenas com embasamento legal e/ou para fins de prestação de serviços da Administração Pública.</b></p>
+				</div>
+			</li>
+			<li>
+				<h4>CANAL DE COMUNICAÇÃO COM O USUÁRIO</h4>
+				<p><b>Além dos canais do DPO, o aplicativo disponibilizará um canal interno para</b>:</p>
+				<ul>
+					<li>Esclarecer dúvidas sobre esta política.</li>
+					<li>Gerenciar preferências de privacidade, quando aplicável.</li>
+					<li>Reportar suspeitas de vulnerabilidades no aplicativo.</li>
+				</ul>
+			</li>
+			<li>
+				<h4>VEDAÇÕES E RESTRIÇÕES DE USO</h4>
+				<p>13.1. É expressamente vedado ao usuário policial:</p>
+				<ul>
+					<li>Realizar consultas sem fundamento legal ou necessidade funcional</li>
+					<li>Compartilhar credenciais de acesso com terceiros</li>
+					<li>Armazenar localmente os dados consultados, exceto quando necessário para fins investigativos</li>
+					<li>Utilizar as informações para fins particulares ou não institucionais</li>
+					<li>Realizar consultas fora do horário de serviço, exceto em situações de emergência</li>
+					<li>Acessar dados de colegas de trabalho ou familiares sem justificativa funcional</li>
+				</ul>
+			</li>
+			<li>
+				<h4>MONITORAMENTO E AUDITORIA</h4>
+				<p>14.1. O aplicativo mantém sistema de auditoria que registra:</p>
+				<ul>
+					<li>Todas as consultas realizadas (data, hora, usuário, parâmetros consultados)</li>
+					<li>Tentativas de acesso não autorizadas</li>
+					<li>Alterações em perfis de acesso</li>
+					<li>Logs de sistema e eventos de segurança</li>
+				</ul>
+				<p>14.2. Os logs de auditoria são revisados periodicamente para detecção de uso inadequado</p>
+				<p>14.3. Relatórios de auditoria são gerados trimestralmente para análise pela supervisão</p>
+			</li>
+			<li>
+				<h4>PRAZOS DE CONSERVAÇÃO E ELIMINAÇÃO DE DADOS PESSOAIS</h4>
+				<p>15.1. <b>Prazos de Conservação:</b></p>
+				<p>Sem prejuízo de disposições legais em contrário, os dados pessoais serão conservados pelo período mínimo necessário para alcançar a finalidade que motivou o seu tratamento.</p>
+				<ul>
+					<li>Dados de acesso e logs de consulta: **05 (cinco) anos** para fins de auditoria e controle</li>
+					<li><b>Registros de conexão à internet: **01 (um) ano**, nos termos do Marco Civil da Internet, podendo este prazo ser estendido mediante requisição judicial.</b></li>
+					<li>Dados consultados por meio do aplicativo: Seguem os prazos de retenção definidos nos sistemas fonte</li>
+				</ul>
+				<p>15.2. <b>Eliminação de Dados:</b></p>
+				<p><b>Ao final do prazo de retenção, os dados pessoais serão **eliminados ou anonimizados** de forma segura, garantindo a impossibilidade de recuperação ou identificação dos titulares.</b></p>
+			</li>
+			<li>
+				<h4>GESTÃO DE INCIDENTES DE SEGURANÇA</h4>
+				<p>16.1. <b>Procedimentos em Caso de Incidente:</b></p>
+				<ul>
+					<li><b>Comunicar o ocorrido à Autoridade Nacional de Proteção de Dados (ANPD) e aos titulares afetados, em prazo razoável, nos termos da LGPD.</b></li>
+					<li>Notificação à ANPD em até **2 (dois) dias úteis** da verificação do incidente</li>
+					<li>Comunicação aos titulares afetados quando houver risco relevante</li>
+					<li>Investigação técnica e implementação de medidas corretivas</li>
+					<li>Documentação completa do incidente e lições aprendidas</li>
+				</ul>
+				<p>16.2. <b>Classificação de Incidentes:</b></p>
+				<ul>
+					<li>Baixo Risco: Falhas menores sem exposição significativa de dados</li>
+					<li>Médio Risco: Exposição limitada de dados não sensíveis</li>
+					<li>Alto Risco: Exposição de dados sensíveis ou em grande volume</li>
+				</ul>
+			</li>
+			<li>
+				<h4>ALTERAÇÕES NA POLÍTICA DE PRIVACIDADE</h4>
+				<p><b>Esta política pode ser atualizada periodicamente. Alterações substanciais serão comunicadas aos usuários por meio de uma notificação no aplicativo ou por outros meios de comunicação adequados. A versão atualizada estará sempre disponível no mesmo canal de distribuição do aplicativo.</b></p>
+			</li>
+			<li>
+				<h4>DISPOSIÇÕES FINAIS</h4>
+				<p><b>Esta Política de Privacidade de Dados Pessoais deverá ser revisada anualmente ou em razão de alterações legais, mudanças em processos internos ou necessidade de adequação, especialmente considerando as premissas fundamentais que a orientam e que estão descritas na Introdução deste instrumento.</b></p>
+				<p>O uso do aplicativo implica na aceitação integral desta Política de Privacidade e dos Termos de Uso do aplicativo Investigação SESP/PR.</p>
+			</li>
+			<small>Última atualização em: 03/11/2025</small>
 		</ol>
-		<small style="float: inline-end; margin-top: 50px">Última atualização em: 11/05/2017</small>
-		<br/>
 	</div>
 </body>
 </html>
