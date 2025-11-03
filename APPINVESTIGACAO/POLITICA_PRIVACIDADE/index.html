@@ -3,239 +3,400 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<style>
-		body {
-			background: white;
-			color: #020202;
-			font-family: Gibson, Helvetica, Arial, sans-serif;
-			font-size: 1em;
-			line-height: 1.4em;
-			font-weight: normal;
+	* {
+		-webkit-transition: 200ms;
+		-moz-transition: 200ms;
+		-ms-transition: 200ms;
+		-o-transition: 200ms;
+		transition: 200ms;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	a, a:visited, a:hover, a:active {
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		position: relative;
+		transition: 0.5s color ease;
+		text-decoration: none;
+	}
+
+	a.before:before, a.after:after {
+		content: "";
+		transition: 0.5s all ease;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		position: absolute;
+	}
+
+	a.before:before {
+		top: -0.25em;
+	}
+
+	a.after:after {
+		bottom: -0.25em;
+	}
+
+	a.before:before, a.after:after {
+		height: 3px;
+		height: 0.1rem;
+		width: 0;
+		background: #f7f7f7;
+	}
+
+	a.before:hover:before, a.after:hover:after {
+		width: 100%;
+	}
+
+	body {
+		color: #020202;
+		font-family: Gibson, Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		line-height: 1.4em;
+		font-weight: normal;
+		/*padding: 20px 30px;*/
+	}
+
+	h1, h2, h3, h4, h5 {
+		font-family: Gibson, Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		line-height: 1.5em;
+		margin: .45em 0;
+		padding: 0;
+	}
+
+	h1 {
+		color: #9322df;
+	}
+		
+	h2 {
+		margin: 2em 0;
+		font-size: 1.6em;
+		text-align: center;
+	}
+
+	h6 {
+		color: #040404;
+	}
+
+	/* links */
+	a, a:visited, a:active, a:hover {
+		color: #9322df;
+		hyphens: none !important;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	* {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	/*colors and backgrounds*/
+	body {
+		background: #ffffff;
+	}
+
+	h1, h2, h3, h4, h5 {
+		color: #040404;
+	}
+
+	h4, p, ul > li {
+		padding-bottom: 16px;
+	}
+
+	h4 {
+		text-transform: uppercase;
+	}
+
+	table {
+		display: table;
+		border-collapse: separate;
+		box-sizing: border-box;
+		text-indent: initial;
+		unicode-bidi: isolate;
+		border-spacing: 0px;
+		border: 1px solid #040404;
+	}
+
+	div > p, li > ul {
+		padding-left: 24px;
+	}
+
+	.table td, .table th {
+		padding: .75rem;
+		vertical-align: top;
+		border: 0.5px solid #040404;
+	}
+
+	.content {
+		padding: 0 clamp(1rem, 5vw, 5rem);
+		max-width: 1200px;
+		margin: 0 auto;
+		position: relative;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	@media (max-width: 768px) {
+		.content {
+			padding: 0 clamp(1rem, 4vw, 3rem);
 		}
+	}
+	@media (max-width: 480px) {
+		.content {
+			padding: 0 clamp(1rem, 3vw, 2rem);
+		}
+	}
+		
+	.content small {
+		margin-top: 50px;
+		display: block;
+		text-align: right; /* Use this to align to the right */
+	}
+	.content::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 	</style>
+	<title>Política de Privacidade</title>
 </head>
 <body>
+	<h2>Política de Privacidade - Aplicativo Investigação SESP/PR</h2>
 	<div class="content">
 		<ol>
 			<li>
-				<h4>Introdução</h4>
-				<p>O Investigação SESP/PR é um aplicativo oficial do Governo do Estado do Paraná, desenvolvido para uso exclusivo de policiais devidamente autorizados. A ferramenta permite realizar consultas integradas de pessoas, veículos, condutores, mandados de prisão, boletins de ocorrência e alertas de roubo de veículos diretamente em dispositivos móveis, agilizando o trabalho de investigação e patrulhamento.</p>
-				<p>Neste Termo de Uso, o usuário do INVESTIGAÇÃO SESP/PR encontrará informações sobre: o funcionamento do serviço e as regras aplicáveis a ele; o arcabouço legal relacionado à prestação do serviço; as responsabilidades do usuário ao utilizar o serviço; as responsabilidades da administração pública ao prover o serviço; informações para contato caso exista alguma dúvida ou seja necessário atualizar informações; e o foro responsável por eventuais reclamações caso questões deste Termo de Uso tenham sido violadas.</p>
-				<p>Além disso, na Política de Privacidade, o usuário do INVESTIGAÇÃO SESP/PR encontrará informações sobre: qual o tratamento dos dados pessoais realizados, de forma automatizada ou não, e a sua finalidade; sendo tal tratamento fundamentado no cumprimento de obrigação legal e no exercício regular de direitos em processo administrativo, conforme previsto nos artigos 7º, II e VI da LGPD; os dados pessoais dos usuários necessários para a prestação do serviço; a forma como eles são coletados; se há compartilhamento de dados com terceiros; e quais as medidas de segurança implementadas para proteger os dados.</p>
+				<h4>INTRODUÇÃO</h4>
+				<p>A Companhia de Tecnologia da Informação e Comunicação do Paraná (Celepar) na condição de <b>operadora</b> do tratamento dos dados e SESP/PR como <b>controladora</b> dos dados do aplicativo, agora denominados conjuntamente <b>Agentes de Tratamento</b>, apresentam esta política de privacidade em acordo com a Lei nº 13.709/18 (Lei Geral de Proteção de Dados Pessoais - LGPD).</p>
+				<p>Ambos os Agentes estão cientes da importância e do valor da privacidade na vida das pessoas. Por isso, por meio desta política de privacidade de dados pessoais, assumem o compromisso de respeitar a privacidade dos dados pessoais tratados e de adotar as providências necessárias e razoáveis à proteção destes dados contra qualquer forma de tratamento ilícito, seja na função de controladora ou de operadora.</p>
+				<p><b>Esta política será ajustada conforme a necessidade de adequação da proteção de dados pessoais à evolução tecnológica, a novos mecanismos de violação, a alterações das leis vigentes e à incorporação de novas funcionalidades.</b></p>
 			</li>
 			<li>
-				<h4>Condições do Aceite</h4>
-				<p>Ao entrar, conectar-se, acessar ou usar nosso aplicativo, você concorda que leu e compreendeu os termos de uso e condições abaixo e concorda em estar dentro dos limites traçados por eles e em cumprir com todas as normas aplicáveis e regulamentos relacionados com seu uso. Você reconhece que esse termo constitui um acordo obrigatório e exigível entre o Governo do Estado do Paraná e você.</p>
-				<p><b>SE VOCÊ NÃO CONCORDA COM ESTE TERMO, POR FAVOR NÃO CONECTE, ACESSE, REALIZE DOWNLOAD OU UTILIZE O APLICATIVO DE QUALQUER MANEIRA.</b></p>
-				<p>Ao aceitar os Termos de Uso, você atesta que é policial devidamente autorizado e que toda e qualquer informação que você nos providenciar por meio de nosso aplicativo é verdadeira e correta. O fornecimento de qualquer informação falsa ou fraudulenta é estritamente proibido, podendo configurar crime e sujeitar o infrator às penalidades legais cabíveis.</p>
-				<p>Ao usar este aplicativo, você declara e concorda que:</p>
-				<ul>
-					<li><b>É policial autorizado:</b> Você é membro ativo da Polícia Civil, Militar, Penal, Científica ou do Corpo de Bombeiros do Estado do Paraná, devidamente credenciado para acesso aos sistemas da SESP/PR.</li>
-					<li><b>Uso profissional:</b> O aplicativo será utilizado exclusivamente para fins institucionais e no exercício de suas funções policiais.</li>
-					<li><b>Sigilo e segurança:</b> Compromete-se a manter a confidencialidade das informações acessadas e a adotar as medidas de segurança necessárias para proteger os dados consultados.</li>
-					<li><b>Conformidade legal:</b> O uso estará em conformidade com a legislação pertinente, incluindo a Lei de Acesso à Informação e a LGPD.</li>
-					<li><b>Monitoramento e Auditoria:</b> Você concorda que seu uso do aplicativo é monitorado e auditado para fins de segurança e conformidade, incluindo o registro de todas as consultas realizadas.</li>
-				</ul>
-				<p>Nossos canais para dúvidas sobre seus dados estão na nossa Política de Privacidade. Para problemas técnicos, contate os canais listados na Seção 12 deste documento.</p>
+				<h4>OBJETIVOS</h4>
+				<p>Esta Política de Privacidade de Dados Pessoais tem por objetivo estabelecer princípios, conceitos e responsabilidades para promover o adequado tratamento dos dados controlados pela SESP/PR e operados pela Celepar, focada em uma efetiva implementação dos direitos fundamentais da pessoa natural, sobretudo aqueles ligados à sua liberdade, intimidade, privacidade e personalidade.</p>
+				<p>Com esta Política de Tratamento de Dados Pessoais as organizações acima mencionadas apresentam quais dados pessoais são tratados, de que forma e para qual finalidade ocorrem os tratamentos, bem como as formas pelas quais os titulares e/ou seus responsáveis legais podem exercer os seus direitos com relação aos seus dados.</p>
 			</li>
 			<li>
-				<h4>Descrição do Aplicativo</h4>
-				<p>O Investigação SESP/PR é uma ferramenta tecnológica desenvolvida pela Secretaria de Estado da Segurança Pública (SESP/PR) e operada pela Celepar, destinada ao uso exclusivo de policiais no exercício de suas atividades.</p>
-				<p><b>Funcionalidades Principais:</b></p>
+				<h4>GLOSSÁRIO</h4>
+				<p>Para melhor compreensão desta política, são definidos os seguintes termos:</p>
 				<ul>
-					<li><b>Consultas de Pessoas:</b> Pesquisa de dados cadastrais e antecedentes</li>
-					<li><b>Consultas de Veículos:</b> Verificação de dados veiculares e situações</li>
-					<li><b>Consultas de Condutores:</b> Validação de CNH e situações condutores</li>
-					<li><b>Mandados de Prisão:</b> Consulta a mandados judiciais em aberto</li>
-					<li><b>Boletins de Ocorrência:</b> Acesso a registros policiais</li>
-					<li><b>Alertas de Roubo:</b> Verificação de veículos com alerta de roubo/furto</li>
-				</ul>
-				<p><b>Requisitos e Limitações Técnicas:</b></p>
-				<ul>
-					<li>Dispositivo móvel corporativo ou pessoal autorizado</li>
-					<li>Acesso à internet móvel ou Wi-Fi</li>
-					<li>Credenciais de acesso válidas fornecidas pela SESP/PR</li>
-					<li>O aplicativo depende da infraestrutura de sistemas corporativos e pode estar sujeito a indisponibilidades técnicas</li>
+					<li><b>Anonimização:</b> é o processo de transformar o dado pessoal em um dado impossível de ser revertido de forma identificável. O fato é que houve uma transformação que não permite voltar ao que era antes.</li>
+					<li><b>Cookie:</b> é um dado que o website solicita ao seu navegador para armazenar no seu computador ou dispositivo móvel. O cookie permite que o website "lembre" as ações ou preferências do usuário ao longo do tempo.</li>
+					<li><b>Dado Pessoal:</b> de acordo com o que preceitua a LGPD, é a informação relacionada a pessoa natural identificada ou identificável.</li>
+					<li><b>Dado Pessoal Sensível:</b> de acordo com o que preceitua a LGPD, são os dados pessoais sobre a origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dados referentes à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural.</li>
+					<li><b>DPO (Data Protection Officer) ou Encarregado:</b> sigla para Data Protection Officer, expressão em inglês correspondente ao encarregado pelo tratamento de dados pessoais ou apenas encarregado de dados.</li>
+					<li><b>Medidas de Segurança Física:</b> objetivam prevenir o acesso físico não autorizado, como o estabelecimento de perímetros de segurança, controles de entrada física, segurança em salas e instalações, e proteção dos equipamentos contra ameaças ambientais.</li>
+					<li><b>Medidas de Segurança Organizacional:</b> visam estabelecer uma estrutura de gerenciamento da implantação e operação da segurança da informação dentro da organização, com medidas como definição de responsabilidades e papéis, segregação de funções, classificação de ativos e de informações, gestão de mudanças, cópias de segurança, dentre outras.</li>
+					<li><b>Medidas de Segurança Técnica:</b> visam a proteção dos dados por meio de controles lógicos de acesso a aplicativos, dados, sistemas operacionais, senhas e arquivos por meio de firewalls de hardwares e softwares, criptografia, antivírus, dentre outras.</li>
+					<li><b>Pseudonimização:</b> é uma anonimização temporária, ou seja, através de mecanismos que são armazenados separadamente, possa voltar as informações ao seu estado original.</li>
+					<li><b>Tratamento de Dados:</b> de acordo com a LGPD, consiste em toda a operação realizada com dados pessoais, como as que se referem a coleta, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração.</li>
 				</ul>
 			</li>
 			<li>
-				<h4>Legislação relacionada ao Aplicativo</h4>
+				<h4>PRINCÍPIOS DA LGPD</h4>
+				<p>O Aplicativo "Investigação SESP/PR" e os Agentes de Tratamento comprometem-se a cumprir as normas previstas na Lei Geral de Proteção de Dados (LGPD), e respeitar os seguintes princípios dispostos no Art. 6º:</p>
 				<div>
-					<p>4.1. <b>Lei Federal n⁰ 12.965, de 23 de abril de 2014</b> - Marco Civil da Internet - Estabelece princípios, garantias, direitos e deveres para o uso da Internet no Brasil.</p>
-					<p>4.2. <b>Lei Federal n⁰ 12.527, de 18 de novembro de 2011</b> - Lei de Acesso a Informação - Regula o acesso a informação previsto na Constituição Federal.</p>
-					<p>4.3. <b>Lei Estadual n⁰ 3.460, de 26 de junho de 2017</b> - Dispõe sobre participação, proteção e defesa dos direitos do usuário dos serviços públicos da administração pública.</p>
-					<p>4.4. <b>Lei Federal n⁰ 13.709, de 14 de agosto de 2018</b> - LGPD - Dispõe sobre o tratamento de dados pessoais.</p>
-					<p>4.5. <b>Decreto Estadual nº 6.474, de 14 de dezembro de 2020</b> - Regulamenta a aplicação da LGPD no âmbito da Administração Pública Estadual.</p>
-					<p>4.6. <b>Resolução SESP nº129, de 26 de Fevereiro de 2025</b> - Institui a Política de Privacidade de Dados Pessoais no âmbito da Secretaria de Estado da Segurança Pública.</p>
-					<p>4.7. <b>Resolução SESP nº357, de 01 de julho de 2025</b> - Institui o Comitê Gestor de Governança de Dados da SESP/PR.</p>
-					<p>4.8. <b>Legislação Específica:</b> O uso do aplicativo também está sujeito ao Código de Processo Penal, Lei de Execução Penal, normas internas da SESP/PR, regulamentos específicos de cada corporação policial e respectivos Códigos de Ética e Disciplina.</p>
+					<p>I - <b>Finalidade</b>: realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior de forma incompatível com essas finalidades;</p>
+					<p>II - <b>Adequação</b>: compatibilidade do tratamento com as finalidades informadas ao titular, de acordo com o contexto do tratamento;</p>
+					<p>III - <b>Necessidade</b>: limitação do tratamento ao mínimo necessário para a realização de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos em relação às finalidades do tratamento de dados;</p>
+					<p>IV - <b>Livre Acesso</b>: garantia, aos titulares, de consulta facilitada e gratuita sobre a forma e a duração do tratamento, bem como sobre a integralidade de seus dados pessoais;</p>
+					<p>V - <b>Qualidade dos Dados</b>: garantia, aos titulares, de exatidão, clareza, relevância e atualização dos dados, de acordo com a necessidade e para o cumprimento da finalidade de seu tratamento;</p>
+					<p>VI - <b>Transparência</b>: garantia, aos titulares, de informações claras, precisas e facilmente acessíveis sobre a realização do tratamento e os respectivos agentes de tratamento, observados os segredos comercial e industrial;</p>
+					<p>VII - <b>Segurança</b>: utilização de medidas técnicas e administrativas aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão;</p>
+					<p>VIII - <b>Prevenção</b>: adoção de medidas para prevenir a ocorrência de danos em virtude do tratamento de dados pessoais;</p>
+					<p>IX - <b>Não Discriminação</b>: impossibilidade de realização do tratamento para fins discriminatórios ilícitos ou abusivos;</p>
+					<p>X - <b>Responsabilização e Prestação de Contas</b>: demonstração, pelo agente, da adoção de medidas eficazes e capazes de comprovar a observância e o cumprimento das normas de proteção de dados pessoais e, inclusive, da eficácia dessas medidas.</p>
 				</div>
 			</li>
 			<li>
-				<h4>Conta e Acesso</h4>
-				<p>5.1. O acesso ao aplicativo é restrito a policiais ativos, mediante credenciamento prévio pela SESP/PR.</p>
-				<p>5.2. O sistema de autenticação utilizará exclusivamente as credenciais do sistema corporativo da SESP/PR (usuário e senha), podendo ser complementado por mecanismos de autenticação forte, como tokens de softwares, certificados digitais ou biometria, conforme definido pela administração.</p>
-				<p>5.3. O usuário é integralmente responsável pela guarda e confidencialidade de suas credenciais de acesso, bem como por todas as atividades realizadas em sua conta.</p>
-				<p>5.4. O usuário deverá comunicar imediatamente qualquer suspeita de acesso não autorizado ou comprometimento de suas credenciais.</p>
-				<p>5.5. O usuário tem o prévio conhecimento de que o serviço prestado pelo APP depende de tráfego de dados móveis de internet ou wifi que são de inteira responsabilidade do usuário.</p>
-				<p>5.6. <b>Revogação de Acesso:</b> O acesso ao aplicativo poderá ser revogado unilateralmente pela administração nas seguintes situações:</p>
+				<h4>BASE LEGAL DO TRATAMENTO</h4>
+				<p>5.1. <b>Fundamentos de Legalidade:</b></p>
+				<p>O tratamento de dados pelo aplicativo Investigação SESP/PR baseia-se nas seguintes hipóteses legais:</p>
 				<ul>
-					<li>Suspeita de uso inadequado ou violação destes Termos</li>
-					<li>Alteração de lotação ou função do usuário</li>
-					<li>Desligamento ou afastamento do serviço</li>
-					<li>Inatividade prolongada superior a 90 dias</li>
+					<li>Exercício de atribuições legais (Art. 7º, II da LGPD): Para cumprimento das atribuições constitucionais dos órgãos de segurança pública previstas no Art. 144 da Constituição Federal e na Lei Estadual que disciplina a organização da SESP/PR;</li>
+					<li>Execução de política pública (Art. 7º, V da LGPD): Para implementação de políticas de segurança pública estabelecidas no Plano Plurianual do Estado do Paraná e no Regimento Interno da SESP/PR;</li>
+					<li>Exercício regular de direitos (Art. 7º, VI da LGPD): Para o exercício regular de direitos em processos administrativos e judiciais de natureza penal.</li>
 				</ul>
-				<p>5.7. <b>Verificação de Identidade:</b> O usuário concorda com a validação periódica de suas credenciais junto aos sistemas corporativos da SESP/PR.</p>
+				<p>5.2. <b>Tratamento de Dados Sensíveis:</b></p>
+				<p>O tratamento de dados sensíveis, quando ocorrer, será realizado com base no Art. 11, II, "b" da LGPD (exercício regular de direitos) e Art. 11, II, "f" da LGPD (prevenção à prática de infrações penais), limitando-se estritamente às categorias de dados sensíveis necessárias para o cumprimento das finalidades legais de segurança pública, tais como:</p>
+				<ul>
+					<li>Dados biométricos para identificação criminal</li>
+					<li>Dados de saúde quando relevantes para investigações</li>
+					<li>Origem racial ou étnica para estatísticas criminais e identificação</li>
+				</ul>
 			</li>
 			<li>
-				<h4>Direitos e Obrigações</h4>
-				<p>6.1. <b>Direitos e Obrigações do Usuário</b></p>
+				<h4>CANAIS DE ATENDIMENTO AO TITULAR</h4>
+				<p>6.1. <b>Exercício de Direitos:</b></p>
+				<p>Os titulares dos dados podem exercer seus direitos previstos no Art. 18 da LGPD através dos seguintes canais oficiais:</p>
+				<ul>
+					<li>Ouvidoria Geral do Estado do Paraná: <a href="https://www.ouvidoria.pr.gov.br" target="_blank">https://www.ouvidoria.pr.gov.br</a></li>
+					<li>Encarregado de Dados (DPO) da SESP/PR: <a href="mailto:lgpd@sesp.pr.gov.br" target="_blank">lgpd@sesp.pr.gov.br</a></li>
+					<li>Encarregado de Dados (DPO) da Celepar: <a href="mailto:dpo@celepar.pr.gov.br" target="_blank">dpo@celepar.pr.gov.br</a></li>
+				</ul>
+				<p>6.2. <b>Procedimentos para Atendimento:</b></p>
 				<div>
-					<p>6.1.1. O usuário do serviço possui os seguintes direitos, conferidos pela Lei de Proteção de Dados Pessoais - LGPD:</p>
-					<div>
-						<p><b>Direito de confirmação e acesso (Art. 18, I e II):</b> direito de obter confirmação do tratamento de seus dados pessoais e acessá-los.</p>
-						<p><b>Direito de retificação (Art. 18, III):</b> direito de solicitar a correção de dados incompletos, inexatos ou desatualizados.</p>
-						<p><b>Direito à limitação do tratamento (Art. 18, IV):</b> direito de limitar o tratamento de dados desnecessários ou excessivos.</p>
-						<p><b>Direito de oposição (Art. 18, § 2º):</b> direito de se opor ao tratamento de dados por motivos relacionados com sua situação particular.</p>
-						<p><b>Direito de portabilidade dos dados (Art. 18, V):</b> direito de realizar a portabilidade dos dados a outro fornecedor.</p>
-						<p><b>Direito de não ser submetido a decisões automatizadas (Art. 20, LGPD):</b> direito a revisão de decisões tomadas unicamente com base em tratamento automatizado.</p>
-					</div>
-					<p>6.1.2. Para exercer quaisquer dos direitos listados acima, o titular poderá apresentar sua solicitação por meio dos canais específicos: <a href="https://www.sigo.pr.gov.br/cidadao/395" target="_blank">https://www.sigo.pr.gov.br/cidadao/395</a> ou <a href="mailto:lgpd@sesp.pr.gov.br" target="_blank">lgpd@sesp.pr.gov.br</a>. Conforme disposto no Art. 19, §2º da LGPD, as solicitações serão respondidas em um prazo de até 15 (quinze) dias, que poderá ser prorrogado por igual período mediante justificativa expressa.</p>
-					<p>6.1.3. Para questões relacionadas ao tratamento de dados pessoais, inclusive para contatar o Encarregado (Data Protection Officer - DPO), está disponível o seguinte canal: <a href="mailto:lgpd@sesp.pr.gov.br" target="_blank">lgpd@sesp.pr.gov.br</a>.</p>
-					<p>6.1.4. O usuário se responsabiliza pela precisão e veracidade dos dados informados para seu cadastro e reconhece que a inconsistência destes poderá implicar a impossibilidade de se utilizar o serviço do aplicativo.</p>
-					<p>6.1.5. Durante a utilização do serviço, o usuário se compromete a utilizar o aplicativo exclusivamente para fins institucionais e no exercício de suas funções policiais.</p>
-					<p>6.1.6. <b>Condutas Expressamente Vedadas:</b> É estritamente proibido ao usuário: </p>
-					<div>
-						<ul>
-							<li>Realizar consultas sem fundamento legal ou necessidade funcional comprovada.</li>
-							<li>Acessar informações de colegas de trabalho, familiares ou conhecidos sem justificativa funcional.</li>
-							<li>Armazenar localmente, copiar ou reproduzir dados consultados, exceto quando necessário para fins investigativos documentados.</li>
-							<li>Utilizar informações obtidas para fins particulares, eleitorais, comerciais ou não institucionais.</li>
-							<li>Compartilhar resultados de consultas com pessoas não autorizadas.</li>
-							<li>Realizar consultas em nome de outros usuários.</li>
-							<li>Desativar ou interferir nos mecanismos de auditoria e logging do aplicativo.</li>
-							<li>Copiar, modificar, adaptar, traduzir, realizar engenharia reversa, descompilar ou desconstruir o aplicativo.</li>
-							<li>Utilizar o aplicativo para spam, envio de mensagem não solicitada, assédio ou fraude eletrônica.</li>
-							<li>Interferir em ou violar o direito de privacidade de qualquer cidadão ou terceiros.</li>
-							<li>Difamar, abusar, assediar, perseguir, ameaçar, ou de qualquer forma, violar os direitos individuais de outros.</li>
-						</ul>
-					</div>
-					<p>6.1.7. <b>Consequências por Descumprimento:</b> O descumprimento destas vedações poderá resultar em:</p>
-					<ul>
-						<li>Bloqueio imediato do acesso ao aplicativo.</li>
-						<li>Notificação à corregedoria do órgão de origem do usuário.</li>
-						<li>Responsabilização disciplinar, civil e criminal.</li>
-						<li>Processamento administrativo perante a SESP/PR.</li>
-					</ul>
+					<p>I - As solicitações serão analisadas conforme disposições legais aplicáveis, considerando as hipóteses de restrição de acesso previstas na LAI e normas de segurança pública</p>
+					<p>II - O prazo para resposta é de 15 (quinze) dias, prorrogável por igual período mediante justificativa</p>
+					<p>III - Não será cobrada taxa para exercício de direitos, exceto quando o titular requisitar a entrega por meio específico que implique custos adicionais</p>
 				</div>
-				<p>6.2. <b>Direitos e Obrigações da Administração Pública</b></p>
+				<p>6.3. <b>Contato dos Agentes de Tratamento</b></p>
+				<ul>
+					<li><b>Operadora (Celepar):</b> O encarregado de proteção de dados (DPO) pode ser contatado pelo link <a href="www.celepar.pr.gov.br/dadospessoais" target="_blank">www.celepar.pr.gov.br/dadospessoais</a> ou e-mail <a href="mailto:dpo@celepar.pr.gov.br" target="_blank">dpo@celepar.pr.gov.br</a>.</li>
+					<li><b>Controladora (SESP/PR):</b> O encarregado de proteção de dados (DPO) pode ser contatado pelo link <a href="https://www.seguranca.pr.gov.br/Pagina/LGPD-Lei-Geral-de-Protecao-de-Dados" target="_blank">https://www.seguranca.pr.gov.br/Pagina/LGPD-Lei-Geral-de-Protecao-de-Dados</a> ou e-mail <a href="mailto:lgpd.sesp@sesp.pr.gov.br" target="_blank">lgpd.sesp@sesp.pr.gov.br</a>.</li>
+				</ul>
+			</li>
+			<li>
+				<h4>DADOS PESSOAIS TRATADOS PELO APLICATIVO INVESTIGAÇÃO SESP/PR</h4>
+				<p>7.1. <b>Dados dos Usuários Policiais</b></p>
+				<ul>
+					<li>Dados de identificação: Nome, CPF, matrícula funcional, lotação, cargo</li>
+					<li>Dados de autenticação: Credenciais de acesso, logs de autenticação</li>
+					<li>Dados de uso: Registros de consultas realizadas, data e hora de acesso, funcionalidades utilizadas</li>
+				</ul>
+				<p>7.2. <b>Dados Consultados por Meio do Aplicativo</b></p>
+				<ul>
+					<li>Dados de pessoas: Nome, CPF, RG, endereço, antecedentes criminais</li>
+					<li>Dados de veículos: Placa, chassi, renavam, modelo, cor, alertas de roubo</li>
+					<li>Dados de condutores: CNH, pontuação, restrições</li>
+					<li>Dados processuais: Mandados de prisão, boletins de ocorrência</li>
+				</ul>
+				<p>7.3. <b>Finalidade de Tratamento</b></p>
+				<p>O tratamento de dados pessoais é realizado com a finalidade de:</p>
+				<ul>
+					<li>Permitir o acesso seguro de policiais aos sistemas de consulta</li>
+					<li>Viabilizar consultas a bancos de dados policiais para fins de investigação e patrulhamento</li>
+					<li>Garantir a rastreabilidade e auditoria das consultas realizadas</li>
+					<li>Cumprir obrigações legais de segurança pública</li>
+				</ul>
+				<p>7.4. <b>Tipo de Tratamento</b></p>
+				<p>Os dados consultados pelo aplicativo são obtidos através de integração em tempo real com os sistemas corporativos da SESP/PR (SESPIntranet e demais bancos de dados policiais), garantindo que as informações estejam sempre atualizadas conforme as fontes oficiais.</p>
+			</li>
+			<li>
+				<h4>COMPARTILHAMENTO DE DADOS</h4>
+				<p>Para a execução das atividades de segurança pública, a SESP/PR poderá compartilhar dados com:</p>
+				<ul>
+					<li>Órgãos integrantes do Sistema de Segurança Pública</li>
+					<li>Autoridades judiciárias e do Ministério Público</li>
+					<li>Outros órgãos públicos, quando necessário para o cumprimento de finalidades legais</li>
+				</ul>
+				<p>O compartilhamento será realizado com estrita observância dos princípios da LGPD e das normas de sigilo e segurança da informação.</p>
+			</li>
+			<li>
+				<h4>TRANSFERÊNCIA INTERNACIONAL DE DADOS</h4>
+				<ul>
+					<li>Os dados tratados pelo aplicativo são armazenados exclusivamente em território nacional, em conformidade com o Art. 33 da LGPD.</li>
+					<li>Não há transferência internacional de dados pessoais para outros países.</li>
+				</ul>
+			</li>
+			<li>
+				<h4>MEDIDAS DE SEGURANÇA</h4>
+				<p>10.1. <b>Medidas Técnicas Implementadas:</b></p>
+				<ul>
+					<li>Criptografia: Dados em trânsito (TLS 1.2+) e em repouso (AES-256)</li>
+					<li>Autenticação: Mecanismo de autenticação forte com credenciais individuais</li>
+					<li>Controle de Acesso: Baseado em perfis e atribuições funcionais (RBAC)</li>
+					<li>Logs de Auditoria: Registro completo de todas as consultas realizadas</li>
+					<li>Mascaramento de Dados: Apresentação seletiva de informações conforme perfil</li>
+					<li>Token JWT: Com tempo de expiração configurado para sessões seguras</li>
+					<li>Canais de comunicação criptografados e mecanismos de tolerância a falhas</li>
+					<li>API Security: Proteção contra ataques com rate limiting e validação de entrada</li>
+				</ul>
+				<p>10.2. <b>Medidas Organizacionais:</b></p>
+				<ul>
+					<li>Treinamento periódico em proteção de dados para usuários</li>
+					<li>Política de senhas robustas e alteração periódica</li>
+					<li>Procedimentos para gestão de credenciais comprometidas</li>
+					<li>Segregação de funções e princípio do menor privilégio</li>
+				</ul>
+				<p>Qualquer problema de violação ou irregularidade em relação a segurança do aplicativo pode entrar em contato com <a href="mailto:security@pr.gov.br" target="_blank">security@pr.gov.br</a>.</p>
+			</li>
+			<li>
+				<h4>UTILIZAÇÃO DE COOKIES</h4>
+				<p><b>A Celepar utiliza cookies para</b>:</p>
 				<div>
-					<p>6.2.1. A administração poderá bloquear o usuário que não estiver utilizando corretamente ou respeitando as condições do termo de uso de forma unilateral.</p>
-					<p>6.2.2. A administração fornecerá os meios de segurança razoáveis para proteger a privacidade do usuário e notificará o usuário em caso de qualquer situação suspeita que for identificada.</p>
-					<p>6.2.3. A SESP/PR se compromete a cumprir todas as legislações inerentes ao uso correto dos dados pessoais de forma a preservar a privacidade dos dados utilizados no serviço, bem como a garantir todos os direitos e garantias legais dos titulares dos dados.</p>
-					<p>6.2.4. <b>Limitação de Responsabilidade:</b></p>
-					<div>
-						<p>- A Administração Pública envidará seus melhores esforços para manter a continuidade e a confiabilidade do serviço. No entanto, não garante que o funcionamento do aplicativo será ininterrupto, seguro ou livre de erros.</p>
-						<p>- O Governo do Estado do Paraná, a SESP/PR e a Celepar não poderão ser responsabilizados por:</p>
-						<ol type="a">
-							<li>Falhas ou indisponibilidades decorrentes de caso fortuito, força maior, ou limitações técnicas dos sistemas integrados.</li>
-							<li>Imprecisões ou inconsistências nas informações provenientes de sistemas terceiros.</li>
-							<li>Uso inadequado, não autorizado ou ilegal do aplicativo pelo usuário.</li>
-							<li>Decisões tomadas com base nas informações consultadas, que são de inteira responsabilidade do usuário.</li>
-						</ol>
-					</div>
-				</div>
-				<p>6.3. <b>Base Legal e Compartilhamento de Dados</b></p>
-				<div>
-					<p>6.3.1. O tratamento de dados pessoais realizado por este aplicativo fundamenta-se nas seguintes bases legais previstas no Art. 7º da LGPD:</p>
-					<ul>
-						<li>Art. 7º, II: Para o cumprimento de obrigação legal ou regulatória pelo controlador.</li>
-						<li>Art. 7º, IV: Para a realização de estudos por órgão de pesquisa.</li>
-						<li>Art. 7º, VI: Para o exercício regular de direitos em processo judicial, administrativo ou arbitral.</li>
-					</ul>
-					<p>6.3.2. O aplicativo realiza integração e compartilhamento de dados exclusivamente com sistemas corporativos da SESP/PR e das Forças de Segurança Pública, estritamente para fins de atendimento das finalidades institucionais e investigativas.</p>
-					<p>6.3.3. É vedado o compartilhamento de dados com entidades privadas, exceto quando expressamente previsto em lei ou mediante determinação judicial, nos termos do Art. 26, §1º da LGPD.</p>
+					<p>I - Identificar o usuário e gerir aspectos de segurança de acesso;</p>
+					<p>II - Lembrar preferências, escolhas de privacidade e configurações;</p>
+					<p>III - Tornar a navegação mais fácil e permitir que as páginas sejam exibidas corretamente;</p>
+					<p>IV - Analisar o desempenho dos sites com base em dados anônimos de navegação.</p>
+					<p><b>Os dados pessoais armazenados em cookies serão utilizados apenas com embasamento legal e/ou para fins de prestação de serviços da Administração Pública.</b></p>
 				</div>
 			</li>
 			<li>
-				<h4>Monitoramento e Auditoria</h4>
-				<p>7.1. <b>Sistema de Auditoria:</b> O aplicativo mantém sistema integral de auditoria que registra:</p>
+				<h4>CANAL DE COMUNICAÇÃO COM O USUÁRIO</h4>
+				<p><b>Além dos canais do DPO, o aplicativo disponibilizará um canal interno para</b>:</p>
+				<ul>
+					<li>Esclarecer dúvidas sobre esta política.</li>
+					<li>Gerenciar preferências de privacidade, quando aplicável.</li>
+					<li>Reportar suspeitas de vulnerabilidades no aplicativo.</li>
+				</ul>
+			</li>
+			<li>
+				<h4>VEDAÇÕES E RESTRIÇÕES DE USO</h4>
+				<p>13.1. É expressamente vedado ao usuário policial:</p>
+				<ul>
+					<li>Realizar consultas sem fundamento legal ou necessidade funcional</li>
+					<li>Compartilhar credenciais de acesso com terceiros</li>
+					<li>Armazenar localmente os dados consultados, exceto quando necessário para fins investigativos</li>
+					<li>Utilizar as informações para fins particulares ou não institucionais</li>
+					<li>Realizar consultas fora do horário de serviço, exceto em situações de emergência</li>
+					<li>Acessar dados de colegas de trabalho ou familiares sem justificativa funcional</li>
+				</ul>
+			</li>
+			<li>
+				<h4>MONITORAMENTO E AUDITORIA</h4>
+				<p>14.1. O aplicativo mantém sistema de auditoria que registra:</p>
 				<ul>
 					<li>Todas as consultas realizadas (data, hora, usuário, parâmetros consultados)</li>
-					<li>Tentativas de acesso malsucedidas</li>
+					<li>Tentativas de acesso não autorizadas</li>
 					<li>Alterações em perfis de acesso</li>
-					<li>Logs de segurança e eventos do sistema</li>
+					<li>Logs de sistema e eventos de segurança</li>
 				</ul>
-				<p>7.2. <b>Revisão Periódica:</b> Os logs de auditoria são revisados periodicamente para detecção de:</p>
+				<p>14.2. Os logs de auditoria são revisados periodicamente para detecção de uso inadequado</p>
+				<p>14.3. Relatórios de auditoria são gerados trimestralmente para análise pela supervisão</p>
+			</li>
+			<li>
+				<h4>PRAZOS DE CONSERVAÇÃO E ELIMINAÇÃO DE DADOS PESSOAIS</h4>
+				<p>15.1. <b>Prazos de Conservação:</b></p>
+				<p>Sem prejuízo de disposições legais em contrário, os dados pessoais serão conservados pelo período mínimo necessário para alcançar a finalidade que motivou o seu tratamento.</p>
 				<ul>
-					<li>Padrões de uso anômalos</li>
-					<li>Tentativas de acesso não autorizado</li>
-					<li>Consultas fora do perfil funcional do usuário</li>
+					<li>Dados de acesso e logs de consulta: **05 (cinco) anos** para fins de auditoria e controle</li>
+					<li><b>Registros de conexão à internet: **01 (um) ano**, nos termos do Marco Civil da Internet, podendo este prazo ser estendido mediante requisição judicial.</b></li>
+					<li>Dados consultados por meio do aplicativo: Seguem os prazos de retenção definidos nos sistemas fonte</li>
 				</ul>
+				<p>15.2. <b>Eliminação de Dados:</b></p>
+				<p><b>Ao final do prazo de retenção, os dados pessoais serão **eliminados ou anonimizados** de forma segura, garantindo a impossibilidade de recuperação ou identificação dos titulares.</b></p>
 			</li>
 			<li>
-				<h4>Gestão de Incidentes</h4>
-				<p>8.1. <b>Notificação Obrigatória:</b> O usuário deve notificar imediatamente a administração sobre:</p>
+				<h4>GESTÃO DE INCIDENTES DE SEGURANÇA</h4>
+				<p>16.1. <b>Procedimentos em Caso de Incidente:</b></p>
 				<ul>
-					<li>Perda ou roubo do dispositivo com acesso ao aplicativo</li>
-					<li>Suspeita de comprometimento de credenciais</li>
-					<li>Identificação de vulnerabilidades de segurança</li>
-					<li>Acesso não autorizado a informações</li>
+					<li><b>Comunicar o ocorrido à Autoridade Nacional de Proteção de Dados (ANPD) e aos titulares afetados, em prazo razoável, nos termos da LGPD.</b></li>
+					<li>Notificação à ANPD em até **2 (dois) dias úteis** da verificação do incidente</li>
+					<li>Comunicação aos titulares afetados quando houver risco relevante</li>
+					<li>Investigação técnica e implementação de medidas corretivas</li>
+					<li>Documentação completa do incidente e lições aprendidas</li>
 				</ul>
-				<p>8.2. <b>Procedimentos de Resposta:</b> Em caso de incidente de segurança, a administração poderá:</p>
+				<p>16.2. <b>Classificação de Incidentes:</b></p>
 				<ul>
-					<li>Bloquear preventivamente o acesso do usuário</li>
-					<li>Iniciar investigação técnica</li>
-					<li>Notificar os órgãos competentes</li>
-					<li>Implementar medidas corretivas</li>
+					<li>Baixo Risco: Falhas menores sem exposição significativa de dados</li>
+					<li>Médio Risco: Exposição limitada de dados não sensíveis</li>
+					<li>Alto Risco: Exposição de dados sensíveis ou em grande volume</li>
 				</ul>
 			</li>
 			<li>
-				<h4>Direitos da Propriedade Intelectual</h4>
-				<p>9.1. O aplicativo, o design, logotipos, logomarcas, ícones, imagens, bem como a seleção, combinação e arranjos dos itens anteriormente mencionados, o software proprietário do Governo do Estado do Paraná, seus algoritmos e todo e qualquer direito de propriedade intelectual que lhe seja pertencente são de propriedade e/ou licenciados para o Governo do Estado do Paraná, e estão sujeitos a proteção de copyright e outros direitos de propriedade intelectual das leis brasileiras. Você não deve copiar, distribuir, expor, executar publicamente, tornar disponível para o público, emular, reduzir a uma forma possível de leitura humana, descompilar, desestruturar, adaptar, sublicenciar, realizar qualquer forma de comercialização sem autorização expressa do Governo do Estado do Paraná.</p>
+				<h4>ALTERAÇÕES NA POLÍTICA DE PRIVACIDADE</h4>
+				<p><b>Esta política pode ser atualizada periodicamente. Alterações substanciais serão comunicadas aos usuários por meio de uma notificação no aplicativo ou por outros meios de comunicação adequados. A versão atualizada estará sempre disponível no mesmo canal de distribuição do aplicativo.</b></p>
 			</li>
 			<li>
-				<h4>Aspectos Legais</h4>
-				<p>10.1. O presente termo de uso será interpretado e regido de acordo com as leis e regulamentos da República Federativa do Brasil e quaisquer disputas judiciais oriundas do presente termo de uso deverão ser submetidas ao Foro Central da Comarca da Região Metropolitana de Curitiba - Estado do Paraná.</p>
-				<p>10.2. Caso alguma condição ou restrição, termo ou disposição do presente termo de uso seja declarada nula por decisão judicial, transitada em julgado, tal nulidade não se estenderá às demais condições, restrições, termos ou disposições aqui previstas, as quais permanecerão em pleno vigor e efeito.</p>
+				<h4>DISPOSIÇÕES FINAIS</h4>
+				<p><b>Esta Política de Privacidade de Dados Pessoais deverá ser revisada anualmente ou em razão de alterações legais, mudanças em processos internos ou necessidade de adequação, especialmente considerando as premissas fundamentais que a orientam e que estão descritas na Introdução deste instrumento.</b></p>
+				<p>O uso do aplicativo implica na aceitação integral desta Política de Privacidade e dos Termos de Uso do aplicativo Investigação SESP/PR.</p>
 			</li>
-			<li>
-				<h4>Contato</h4>
-				<p>11.1. Para questionamentos ou sugestões concernentes ao presente termo, entre em contato por meio dos seguintes canais:</p>
-				<ul>
-					<li><b>Controladora do Tratamento dos Dados: SESP/PR</b></li>
-					<li><a href="mailto:lgpd@sesp.pr.gov.br" target="_blank">lgpd@sesp.pr.gov.br</a></li>
-					<li><b>Operadora do Tratamento dos Dados: Celepar</b></li>
-					<li><a href="mailto:dpo@celepar.pr.gov.br" target="_blank">dpo@celepar.pr.gov.br</a></li>
-				</ul>
-			</li>
-			<li>
-				<h4>Suporte Técnico</h4>
-				<p>12.1. Para reportar problemas técnicos, bugs, ou dificuldades de acesso ao aplicativo, o usuário poderá entrar em contato através dos seguintes canais:</p>
-				<p><b>CONTROLADOR - SESP/PR</b></p>
-				<div>
-					<ul>
-						<li>Coordenação-Geral de Sistemas e Dados da SESP/PR</li>
-						<li>E-mail: <a href="mailto:ctic.sistemas@sesp.pr.gov.br" target="_blank">ctic.sistemas@sesp.pr.gov.br</a></li>
-						<li>Telefone: <a href="tel:+554133131348" target="_blank">(41) 3313-1348</a> (de segunda à sexta, das 8h00 às 17h30)</li>
-					</ul>
-				</div>
-				<p><b>OPERADOR - CELEPAR</b></p>
-				<div>
-					<ul>
-						<li>Telefone: <a href="tel:+554132005007" target="_blank">(41) 3200-5007</a> (disponível 24 horas por dia).</li>
-						<li>WhatsApp: <a href="https://api.whatsapp.com/send?phone=554132005280" target="_blank">(41) 3200-5280</a> (de segunda à sexta, das 08h00 às 18h00).</li>
-						<li>E-mail: <a href="mailto:central@celepar.pr.gov.br" target="_blank">central@celepar.gov.br</a>.</li>
-						<li>Site: <a href="https://www.celepar.pr.gov.br/Pagina/Central-de-Atendimento-da-Celepar" target="_blank">https://www.celepar.pr.gov.br/Pagina/Central-de-Atendimento-da-Celepar</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<h4>Disposições Finais</h4>
-				<p>13.1. O usuário declara ter lido, compreendido e aceito integralmente todos os termos e condições aqui estabelecidos.</p>
-				<p>13.2. Estes Termos de Uso deverão ser revisados anualmente ou sempre que houver alterações legislativas relevantes.</p>
-				<p>13.3. O aceite destes Termos é condição indispensável para o acesso e uso do aplicativo Investigação SESP/PR.</p>
-				<p>13.4. <b>Vigência e Alterações:</b> Estes Termos de Uso estão em vigor a partir da data de sua publicação. O Governo do Estado do Paraná se reserva o direito de modificar estes Termos a qualquer momento. As alterações entrarão em vigor após sua publicação no mesmo canal de distribuição do aplicativo. O uso continuado do aplicativo após tais modificações constitui aceitação expressa dos novos Termos.</p>
-			</li>
+			<small>Última atualização em: 03/11/2025</small>
 		</ol>
 	</div>
 </body>
